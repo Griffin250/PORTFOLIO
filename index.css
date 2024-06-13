@@ -1,0 +1,639 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+
+}
+body{
+    background:black;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*..........................................................Header section...............................*/
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background\ copy-2.png);
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 150px;
+    height: 80px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px; 
+    margin-left: 80px;
+}
+nav ul span{
+    text-decoration: underline;
+    color: brown;  
+}
+nav ul li a{
+    text-decoration:none;
+    height: 6px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+nav ul i ion-icon{
+    display: none;
+}
+nav i.fa-solid{
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    color: brown;
+    font-weight: 500px;
+    display: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: brown;
+    transition: 0.4s;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 25px;
+}
+.header-text p{
+    font-weight: bold;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+/*............................typing-effect..................*/
+
+.typing-effect{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid orange;
+    animation: typing 5s steps(27, end) infinite alternate, blink-caret .5s step-end infinite;
+}
+@keyframes typing{
+    0%, 20%{width:0;}
+    80%, 100%{width:13ch;}
+}
+@keyframes blink-caret{
+    0%, 100% {border-color: transparent;}
+    50%{border-color: orange;}
+}
+
+
+
+
+
+.header-text h1 span{
+    color: brown;
+}
+
+/*.....................About me section...............*/
+#about{
+    padding: 80px;
+}
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-column-1{
+    flex-basis: 35%;
+}
+.about-column-1 img{
+    border-radius: 15px;
+    width: 100%;
+}
+.about-column-2{
+    flex-basis: 60%;
+}
+.about-column-2 .sub-title{
+    font-weight: 600;
+    color: white;
+    font-size: 50px;
+}
+/*...........................Tab-content in About me section.......................*/
+form{
+    margin-top: 50px;
+}
+.second-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tab-column h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+.tab-column ul li{
+    list-style: none;
+    margin-right: 5px;
+    margin-top: 15px;
+}
+.tab-column ul li span{
+    color: rgb(125, 33, 33);
+    font-weight: bold;
+}
+/*..........................Service section..................................*/
+
+.service-container .sub-title{
+    font-size:50px;
+    color: white;
+    font-weight: 600;
+}
+#services{
+    padding:30px 0;
+}
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service-list div{
+    background: rgb(41, 41, 41);
+    padding: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.service-list div i{
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -50px;
+  margin-left: 80px;
+}
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.service-list div a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.service-list div:hover{
+background-color: brown;
+transform: translateY(-10px);
+}
+
+/*....................................Portfolio section......................*/
+#portfolio{
+    padding: 80px;
+    margin-top: -150px;
+}
+.portfolio-container h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.worklist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;  
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.2), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight:bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.layer a{
+    text-decoration: none;
+    color: brown;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    align-items: center;
+    margin-top: 20px;
+    line-height: 50px;
+}
+.work img:hover{
+    transform: scale(1.5);
+}
+.work:hover .layer{
+    height: 100%;
+}
+/*...............................Contact section..........................*/
+form{
+    margin-top: -70px;
+}
+.contact-row{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.contact-container{
+    padding: 80px;
+}
+.contact-container h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.contact-container .p2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-container a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+.contact-container .fa-solid{
+    color: brown;
+    font-size: 20px;
+}
+.contact-container span{
+    margin-left: 10px;
+    color: brown;
+}
+.contact-container span:hover{
+    text-decoration: underline white solid 3px;
+    height: 15px;
+}
+
+/*...............................................Social media icons...................................*/
+
+.contact-container .social-media-icons .fa-brands{
+    width: 35px;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    background:brown;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.contact-container .social-media-icons .fa-brands:hover{
+    background: white;
+    color: brown;
+    opacity: 0.4;
+    transition: 0.8s;
+}
+/*.................................Message-section.....................*/
+.contact-container button{
+    margin-top: 20px;
+    width: 50%;
+    height: 35px;
+    border-radius: 5px;
+    background: brown;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px whitesmoke ;
+}
+.contact-container button a{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+.contact-container button:hover{
+    opacity: 0.5;
+    box-shadow: 0.5px 0.5px 6px aqua;
+}
+
+.message-container{
+    padding: 100px;
+    margin-left: -1000px;
+    margin-top: 50px;
+}
+
+.message-container input{
+    width: 550px;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 10px 10px;
+    border:none;
+    outline: none;
+}
+.message-container textarea{
+    width: 550px;
+    height: 100px;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border:none;
+    outline: none;
+    resize: none;
+}
+
+.message-container button {
+    height: 35px;
+    width: 20%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 390px;
+    margin-top: 5px;
+    background: brown;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 6px whitesmoke;
+}
+.message-container button:hover{
+    opacity: 0.5;
+    box-shadow: 0.5px 0.5px 6px aqua;
+}
+
+/*.................................Back to top button.........................*/
+.bottom-top{
+  align-items: center;
+  text-align: center;
+  border:  brown solid 1px;
+  width: 140px;
+  height: 30px;
+  padding-top: 5px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  margin-left: 680px;
+}
+.bottom-top:hover{
+    opacity: 0.4;
+    transition: 0.2s;
+    border: white solid 1px;
+}
+.bottom-top a{
+    text-decoration: none;
+}
+.bottom-top a i{
+    color: white;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.bottom-top a span{
+    color:white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/*...............................Footer-section.........................*/
+.copyright{
+    background: grey;
+    height: 35px;
+    width: 100%; 
+    padding-top: 10px;
+    position: absolute;
+}
+.copyright p{
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: -50px;
+}
+.copyright p span{
+    margin-left: 500px;
+}
+/*....................................................CSS for small screens......................*/
+
+@media only screen and (max-width:600px){
+/*....................................................Header section......................................*/
+
+    #header{
+        width: 75%;
+        background-image: url(images/User-image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+}
+
+/*........................................Menu section......................*/
+nav ul{
+  background:brown; 
+  top: 0;
+  right: -200px;
+  position: fixed;
+  width: 200px;
+  height: 400px;
+  padding-top:0px;
+  z-index: 2;
+  border-radius: 5px;
+  transition:right 0.7s;
+}
+
+nav ul i ion-icon{
+    display: block;
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 20px 20px;
+}
+nav ul li{
+    display: block;
+   margin-left: 25px;   
+   padding: 50px 5px;
+   margin-top: -70px;
+}
+nav i.fa-solid{
+    display: block;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    margin-left: 250px;
+    margin-top: 5px;
+}
+/*...............................Header text.........................*/
+.header-text{
+    margin-top: 40%;
+}
+.header-text p{
+    font-size: 16px;
+}
+.header-text h1{
+    font-size: 25px;
+}
+
+/*..............................................About me section.....................................*/
+#about{
+    padding: 10px;
+}
+.first-row{
+    flex-wrap: nowrap;
+    display:inline-flex;
+    margin-left: -250px;
+}
+.about-column-1 img{
+    display: none;
+}
+.about-column-2{
+    flex-basis: 60%;
+}
+.about-column-2 p{
+    width: 70%;
+}
+.about-column-2 .sub-title{
+    font-size: 30px;
+}
+
+.second-row{
+    flex-wrap: wrap;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tab-column h2{
+    margin-top: 10px;
+    font-size: 25px;
+}
+/*............................................Service section........................*/
+#services{
+    margin-top: 50px;
+}
+.service-container h1.sub-title{
+    font-size: 38px;
+    font-weight: 800;
+}
+#services{
+    padding: 12px 0;
+}
+.service-list{
+    display: inline-block;
+    margin-top: 20px;
+}
+.service-list div{
+    width: 70%;
+    margin-top: 20px;
+    padding: 20px;
+}
+.service-list div h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*..........................................Portfolio section................................*/
+#portfolio{
+    padding: 20px;
+    margin-top: 0px;
+    width: 70%;
+}
+.portfolio-container h1{
+    font-size: 38px;
+}
+.layer{
+    height: 100%;
+    margin-top: 10px;
+}
+.layer h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/*..............................Contact section........................*/
+
+.contact-container{
+    padding: 20px;
+    margin-top: 30px;
+}
+.contact-container .p1{
+    font-size: 14px;
+}
+.contact-container .p2{
+    font-size: 16px;
+}
+.contact-container button{
+    margin-left: 10px;
+}
+.message-container{
+    margin-top: 20px;
+    margin-left: -80px;
+    margin-top: -40px;
+}
+.message-container input{
+    width: 250px;
+}
+.message-container textarea{
+    width: 250px;
+}
+.message-container button{
+    margin-left: 50px;
+    width: 120px;
+}
+/*..........................................Back to top button.........................*/
+.bottom-top{
+    margin-left: 80px;
+}
+
+/*............................................Footer section.............................*/
+.copyright{
+    width: 100%;
+}
+.copyright p{
+    font-size: 15px;
+    margin-left: -100px;
+}
+.copyright span{
+  display: none;
+}
+
+
+
+
+
+
+}

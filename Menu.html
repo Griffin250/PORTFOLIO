@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<style>
+
+
+.overlay{
+    background:greenyellow;
+    height: 50%;
+    width: 0;
+    left: 0;
+    top: 0px;
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content{
+  position: relative;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+}
+.overlay a{
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    color: rgb(100, 30, 30);
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.overlay a:hover{
+    color: red;
+}
+.overlay .close-button{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+span{
+    cursor:pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+.typing-effect{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid orange;
+    animation: typing 5s steps(27, end) infinite alternate, blink-caret .5s step-end infinite;
+}
+@keyframes typing{
+    0%, 20%{width:0;}
+    80%, 100%{width:27ch;}
+}
+@keyframes blink-caret{
+    0%, 100% {border-color: transparent;}
+    50%{border-color: orange;}
+}
+.range{
+    width: 180px;
+    height: 50px;
+    border-radius: 2px;
+}
+</style>
+<body>
+    
+    <div id="myNav" class="overlay">
+        <a href="javscript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+    <a href="">HOME</a>
+    <a href="">ABOUT</a>
+    <a href="">TEAM</a>
+    <a href="">SUPPORT</a>
+    <a href="">CONTACT</a>
+</div>
+    </div>
+    <span onclick="openNav()">&#9776; MENU</span>
+
+    <h2 class="typing-effect">HELLO EVERYONE !</h2>
+<input type="range" class="range" value="80%">
+<input type="color">
+<input type="datetime-local">
+<input type="tel">
+    <script>
+        function openNav(){
+            document.getElementById("myNav").style.width="25%";
+        }
+        function closeNav(){
+            document.getElementById("myNav").style.width="0%";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!--------------------------------------------------------------------------------
+.navbar{
+    background-color: brown;
+    width: 100%;
+    height: 100px;
+    margin-left: -10px;
+    margin-top: -10px;
+    overflow: hidden;
+    position: fixed;
+}
+.navbar span.menu-icon{
+    display: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.navbar a.logo{
+    font-size: 35px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a i.fa-solid.fa-code-compare{
+    font-size: 30px;
+    rotate: 90deg;
+}
+.navbar a b{
+    display: none;
+}
+.navbar .logo:hover{
+    opacity: 0.6;
+    transition: 0.5s;
+}
+/*...............................Toggle button...............................................*/
+.toggle{
+    font-size: 30px;
+    cursor: pointer;
+    }
+.dark-mode {
+        background-color: black;
+        color: white;
+}
+
+/*.............................................search-box.................................*/
+.search-box{
+   display: flexbox;
+   margin-left: 500px;
+}
+.navbar .search-box input{
+    width: 150px;
+}
+
+
+
+
+/*....................................................List of Items in the Navbar..................*/
+.navbar .nav-list ul a{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 8px;
+} 
+.navbar .nav-list{
+    margin-left:px;
+  float: right;
+    margin-top: -50px;
+    margin-bottom: 25px;
+}.navbar .nav-list a.close-button{
+    display: none;
+}
+.nav-list ul li{
+    display: inline-block;
+    list-style-type: disc;
+}
+.nav-list ul li .fa-solid{
+    align-self: center;
+    padding: 5px;
+    color:aqua;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+li a{
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+   
+
+
+
+
+
+
+------------------------------------------------------------------------------->
