@@ -37,7 +37,7 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px; 
+    margin: 10px 10px; 
     margin-left: 80px;
 }
 nav ul span{
@@ -97,7 +97,6 @@ nav ul li a:hover{
     0%, 100% {border-color: transparent;}
     50%{border-color: orange;}
 }
-
 
 
 
