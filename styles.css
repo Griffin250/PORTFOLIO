@@ -79,7 +79,10 @@ nav ul li a:hover{
     margin-top: 20px;
     font-size: 60px;
 }
-
+.intro{
+font-size: 50px;
+font-weight: 800;
+}
 /*............................typing-effect..................*/
 
 .typing-effect{
