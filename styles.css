@@ -463,7 +463,12 @@ form{
         background-position: center;
         height: 50vh;
 }
-
+.intro{
+    font-size: 20px;
+}
+.header-text{
+    font-size: 20px;
+}
 /*........................................Menu section......................*/
 nav ul{
   background:brown; 
