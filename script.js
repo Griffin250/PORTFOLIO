@@ -9,7 +9,7 @@ function closemenu() {
   sidemenu.style.right = "-200px";
 }
 
-const words = ["Developer", "Web Designer", "Programmer", "Freelancer"];
+const words = ["Web Designer","UI/UX Designer", "FrontEnd Developer","BackEnd Developer",  "Freelancer"];
 let wordIndex = 0;
 let charIndex = 0;
 let currentWord = '';
