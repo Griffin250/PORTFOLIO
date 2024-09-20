@@ -26,7 +26,7 @@ html{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .logo{
@@ -37,20 +37,21 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 10px; 
+    margin: 10px 5px; 
     margin-left: 80px;
 }
-nav ul span{
-    text-decoration: underline;
-    color: brown;  
-}
+
 nav ul li a{
     text-decoration:none;
     height: 6px;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
     color: white;
     position: relative;
+}
+nav ul li a.home{
+    text-decoration: underline brown solid;
+    color: brown;  
 }
 nav ul i ion-icon{
     display: none;
@@ -80,7 +81,7 @@ nav ul li a:hover{
     font-size: 60px;
 }
 .intro{
-font-size: 50px;
+font-size: 40px;
 font-weight: 800;
 }
 /*............................typing-effect..................*/
@@ -89,7 +90,7 @@ font-weight: 800;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 2px solid orange;
+    border-right: 2px solid orangered;
     animation: typing 5s steps(27, end) infinite alternate, blink-caret .5s step-end infinite;
 }
 @keyframes typing{
@@ -98,7 +99,7 @@ font-weight: 800;
 }
 @keyframes blink-caret{
     0%, 100% {border-color: transparent;}
-    50%{border-color: orange;}
+    50%{border-color: orangered;}
 }
 
 
@@ -132,6 +133,7 @@ font-weight: 800;
     color: white;
     font-size: 50px;
 }
+
 /*...........................Tab-content in About me section.......................*/
 form{
     margin-top: 50px;
@@ -269,7 +271,105 @@ transform: translateY(-10px);
 .work:hover .layer{
     height: 100%;
 }
-/*...............................Contact section..........................*/
+/*.....................................................new section..........................*/
+.small-title{
+    margin-left: 5%;
+}
+hr{
+    width: 90%;
+    margin: auto;
+}
+/*.....................................my skills section ...................................*/
+.skills{
+    width: 90%;
+   padding: 60px 0;
+   white-space: nowrap;
+    overflow: hidden;
+    margin: auto;
+}
+.logo-slide{
+    animation: 20s slide infinite linear;
+    display: inline-block;
+}
+.skills:hover .logo-slide{
+    animation-play-state: paused;
+}
+.logo-slide img{
+    height: 60px;
+    margin:0 20px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    cursor: pointer;
+}
+.logo-slide img:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+@keyframes slide{
+    from{
+transform: translateX(0%);
+    }
+    to{
+transform: translateX(-100%);
+    }
+}
+
+
+/* ............................................................
+.logo-slide {
+    width: 100%;
+    position: relative;
+    display:flex;
+    margin: 70px auto;
+    align-items: center;
+    white-space: no-wrap;
+    animation: 25s slide linear infinite;
+}
+
+.logo-wrapper{
+    border: 1px solid rgb(39, 118, 93); 
+    border-top: 3px solid rgba(36, 138, 87, 0.862);
+    border-bottom: 3px solid rgba(36, 138, 87, 0.862);
+     border-radius: 5px;
+    width: 140px;
+    height: 100px;
+    padding: 2px;
+    margin: 0 20px;
+    cursor: pointer; 
+}
+.logo-wrapper h3{
+text-align: center;
+}
+
+.logo-slide img {
+    height: 60px; 
+    margin: 5px 5px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 5px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.logo-wrapper img:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+.logo-slide:hover{
+    transform:translate(4px);
+    animation-play-state: paused;  
+}
+@keyframes slide{
+    from{
+transform: translateX(0%);
+    }
+    to{
+transform: translateX(-100%);
+    }
+}
+
+/*...............................Contact section.................................................*/
 form{
     margin-top: -70px;
 }
@@ -313,34 +413,140 @@ form{
 
 /*...............................................Social media icons...................................*/
 
-.contact-container .social-media-icons .fa-brands{
+ .social-media-icons .fa-brands{
     width: 35px;
     height: 35px;
     margin-top: 20px;
     font-size: 20px;
+    color: white;
     line-height: 38px;
     text-align: center;
     background:brown;
     border-radius: 50%;
     cursor: pointer;
 }
-.contact-container .social-media-icons .fa-brands:hover{
+.icons .fa-brands{
+    margin: 0 12px;
+}
+ .social-media-icons .fa-brands:hover{
     background: white;
     color: brown;
     opacity: 0.4;
-    transition: 0.8s;
+    transition: 0.3s;
 }
+.btn{
+    margin: 25px -30px;
+    width: auto;
+    justify-content: space-between;
+}
+.btn button{
+    width: 140px;
+    height: 40px;
+    background: none;
+    border: 1px solid brown;
+    border-radius: 8px;
+    margin: 0 30px;
+}
+.btn button a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+
+}
+/*............................................................. Download button.................................................. */ 
+.buttonDownload {
+    width:500px;
+    display: inline-block;
+    position: relative;
+    padding: 10px 12px;
+    background-color:orangered;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    text-indent: 15px;
+    border: none;
+    opacity: 1;
+   }
+   
+   .buttonDownload:hover {
+   opacity: 1;
+   transition: 0.3s;
+    color: white;
+   }
+   
+   .buttonDownload:before, .buttonDownload:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 8px;
+    top: 52%;
+   }
+   
+   .buttonDownload:before {
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+    
+   }
+   
+   .buttonDownload:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 0.5s linear infinite;
+    animation-play-state: paused;
+   }
+   
+   .buttonDownload:hover:before {
+    border-color: white;
+   }
+   
+   .buttonDownload:hover:after {
+    border-top-color: white;
+    animation-play-state: running;
+   }
+   
+   @keyframes downloadArrow {
+    0% {
+     margin-top: -7px;
+     opacity: 1;
+    }
+   
+    0.001% {
+     margin-top: -15px;
+     opacity: 0.8;
+    }
+   
+    50% {
+     opacity: 1;
+    }
+   
+    100% {
+     margin-top: 0;
+     opacity: 0.8;
+    }
+   }
 /*.................................Message-section.....................*/
 .contact-container button{
     margin-top: 20px;
     width: 50%;
-    height: 35px;
-    border-radius: 5px;
-    background: brown;
+    height: 40px;
+    border-radius: 8px;
+    background:orangered;
     outline: none;
     border: none;
     cursor: pointer;
-    box-shadow: 0px 0px 6px whitesmoke ;
 }
 .contact-container button a{
     font-size: 18px;
@@ -349,7 +555,6 @@ form{
 }
 .contact-container button:hover{
     opacity: 0.5;
-    box-shadow: 0.5px 0.5px 6px aqua;
 }
 
 .message-container{
@@ -380,38 +585,27 @@ form{
 }
 
 .message-container button {
-    height: 35px;
+    height: 40px;
     width: 20%;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-left: 390px;
     margin-top: 5px;
-    background: brown;
+    background: orangered;
     color: white;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    box-shadow: 0px 0px 6px whitesmoke;
+   
 }
 .message-container button:hover{
     opacity: 0.5;
-    box-shadow: 0.5px 0.5px 6px aqua;
+  
 }
 
 /*.................................Back to top button.........................*/
-.bottom-top{
-  align-items: center;
-  text-align: center;
-  border:  brown solid 1px;
-  width: 140px;
-  height: 30px;
-  padding-top: 5px;
-  margin-top: 30px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  margin-left: 680px;
-}
+
 .bottom-top:hover{
     opacity: 0.4;
     transition: 0.2s;
@@ -432,6 +626,140 @@ form{
     font-weight: bold;
 }
 
+/* ..........Submit button -...................*/ 
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
+  /* ...............................Back to top button............................... */ 
+.top-bottom {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   border: 2px solid orangered;
+    opacity: 0.5;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    margin: 12px auto;
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .top-bottom:hover {
+    width: 140px;
+    border-radius: 30px;
+    transition-duration: 0.3s;
+   color: white;
+    opacity: 1;
+    
+    align-items: center;
+  }
+  
+  .top-bottom:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+  }
+  
+  .top-bottom::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+  }
+  
+  .top-bottom:hover::before {
+    font-size: 16px;
+    opacity: 1;
+    color: white;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+  }
+  
 /*...............................Footer-section.........................*/
 .copyright{
     background: grey;
@@ -450,11 +778,14 @@ form{
 .copyright p span{
     margin-left: 500px;
 }
+
 /*....................................................CSS for small screens......................*/
 
 @media only screen and (max-width:600px){
 /*....................................................Header section......................................*/
-
+.logo{
+ float:left;
+}
     #header{
         width: 75%;
         background-image: url(images/User-image.jpg);
@@ -494,7 +825,10 @@ nav ul li{
     display: block;
    margin-left: 25px;   
    padding: 50px 5px;
-   margin-top: -70px;
+   margin-top: -80px;
+}
+nav ul li a{
+    font-size: 18px;
 }
 nav i.fa-solid{
     display: block;
@@ -506,7 +840,7 @@ nav i.fa-solid{
 }
 /*...............................Header text.........................*/
 .header-text{
-    margin-top: 40%;
+    margin-top: 50%;
 }
 .header-text p{
     font-size: 16px;
@@ -621,6 +955,32 @@ nav i.fa-solid{
     margin-left: 50px;
     width: 120px;
 }
+/*...........................................................*/
+.logo-slide img{
+    margin: 0 0px;
+}
+.skills{
+    width:75%;
+    margin: 0 auto;
+}
+.buttonDownload{
+    font-size: 10px;
+    
+}
+.social-media-icons .fa-brands{
+    margin: 0 6px;
+   height: 25px;
+   width: 25px;
+   font-size: 15px;
+   line-height: 28px
+}
+.btn{
+    display: flex;
+}
+.btn button{
+    font-size: 8px;
+    width: 160px;
+}
 /*..........................................Back to top button.........................*/
 .bottom-top{
     margin-left: 80px;
@@ -628,7 +988,7 @@ nav i.fa-solid{
 
 /*............................................Footer section.............................*/
 .copyright{
-    width: 100%;
+    width: 250px;
 }
 .copyright p{
     font-size: 15px;

@@ -1,4 +1,8 @@
 
+var copy = document.querySelector(".logo-slide").cloneNode(true);
+document.querySelector(".skills").appendChild(copy);
+
+
 
 var sidemenu = document.getElementById("sidemenu");
 
