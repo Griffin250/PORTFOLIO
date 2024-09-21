@@ -846,7 +846,8 @@ nav i.fa-solid{
     font-size: 16px;
 }
 .header-text h1{
-    font-size: 25px;
+    font-size: 20px;
+    margin: 12px 0;
 }
 
 /*..............................................About me section.....................................*/
@@ -884,10 +885,10 @@ nav i.fa-solid{
 }
 /*............................................Service section........................*/
 #services{
-    margin-top: 50px;
+    margin:50px auto;
 }
-.service-container h1.sub-title{
-    font-size: 38px;
+h1{
+    font-size: 16px;
     font-weight: 800;
 }
 #services{
@@ -898,8 +899,8 @@ nav i.fa-solid{
     margin-top: 20px;
 }
 .service-list div{
-    width: 70%;
-    margin-top: 20px;
+    width: 75%;
+    margin:20px auto;
     padding: 20px;
 }
 .service-list div h2{
@@ -910,11 +911,11 @@ nav i.fa-solid{
 /*..........................................Portfolio section................................*/
 #portfolio{
     padding: 20px;
-    margin-top: 0px;
-    width: 70%;
+    margin:0px auto;
+    width: 75%;
 }
 .portfolio-container h1{
-    font-size: 38px;
+    font-size: 20px;
 }
 .layer{
     height: 100%;
@@ -926,7 +927,13 @@ nav i.fa-solid{
 }
 
 /*..............................Contact section........................*/
-
+.contact-column{
+    display: flex;
+    margin: auto;
+}
+.message-container{
+    margin: auto;
+}
 .contact-container{
     padding: 20px;
     margin-top: 30px;
@@ -978,9 +985,17 @@ nav i.fa-solid{
     display: flex;
 }
 .btn button{
-    font-size: 8px;
-    width: 160px;
+    width: 120px;
+    height: 30px;
 }
+.btn button a{
+    font-size: 12px;
+    font-weight: 800;
+}
+.wrapper{
+  justify-content: center;
+}
+
 /*..........................................Back to top button.........................*/
 .bottom-top{
     margin-left: 80px;
