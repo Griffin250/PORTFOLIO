@@ -793,6 +793,7 @@ form{
         background-size: cover;
         background-position: center;
         height: 50vh;
+        margin-bottom: 40px;
 }
 .intro{
     font-size: 20px;
@@ -888,7 +889,7 @@ nav i.fa-solid{
     margin:50px auto;
 }
 h1{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 800;
 }
 #services{
@@ -925,18 +926,18 @@ h1{
     font-size: 25px;
     font-weight: 800;
 }
-
+.blog-section{
+    display: none;
+}
 /*..............................Contact section........................*/
 .contact-column{
-    display: flex;
     margin: auto;
 }
 .message-container{
     margin: auto;
 }
 .contact-container{
-    padding: 20px;
-    margin-top: 30px;
+    margin: 30px auto;
 }
 .contact-container .p1{
     font-size: 14px;
@@ -945,7 +946,8 @@ h1{
     font-size: 16px;
 }
 .contact-container button{
-    margin-left: 10px;
+    margin: 15px 20px;
+    width: 160px;
 }
 .message-container{
     margin-top: 20px;
@@ -958,9 +960,9 @@ h1{
 .message-container textarea{
     width: 250px;
 }
-.message-container button{
+.message-container .button{
     margin-left: 50px;
-    width: 120px;
+    width: 150px;
 }
 /*...........................................................*/
 .logo-slide img{
@@ -1003,7 +1005,7 @@ h1{
 
 /*............................................Footer section.............................*/
 .copyright{
-    width: 250px;
+    width: 100%;
 }
 .copyright p{
     font-size: 15px;
@@ -1012,8 +1014,6 @@ h1{
 .copyright span{
   display: none;
 }
-
-
 
 
 
