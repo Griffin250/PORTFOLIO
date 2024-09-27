@@ -287,13 +287,26 @@ hr{
     overflow: hidden;
     margin: auto;
 }
+.skills-2{
+    width: 90%;
+   padding: 60px 0;
+   white-space: nowrap;
+    overflow: hidden;
+    margin: auto;
+    display: none;
+}
 .logo-slide{
     animation: 20s slide infinite linear;
     display: inline-block;
 }
+.slide-right{
+    animation: 20s slide-right infinite linear;
+    display: inline-block; 
+}
 .skills:hover .logo-slide{
     animation-play-state: paused;
 }
+
 .logo-slide img{
     height: 60px;
     margin:0 20px;
@@ -313,7 +326,6 @@ transform: translateX(0%);
 transform: translateX(-100%);
     }
 }
-
 
 /* ............................................................
 .logo-slide {
