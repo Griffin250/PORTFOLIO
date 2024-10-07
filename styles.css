@@ -89,6 +89,7 @@ font-weight: 800;
 .typing-effect{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow: hidden;
+    color: #ff004f;
     white-space: nowrap;
     border-right: 2px solid orangered;
     animation: typing 5s steps(27, end) infinite alternate, blink-caret .5s step-end infinite;
@@ -796,10 +797,12 @@ form{
 @media only screen and (max-width:600px){
 /*....................................................Header section......................................*/
 .logo{
- float:left;
+float: left;
+margin-left: -60%;
+margin-top: 2px;
 }
     #header{
-        width: 75%;
+        width: 100%;
         background-image: url(images/User-image.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -844,12 +847,12 @@ nav ul li a{
     font-size: 18px;
 }
 nav i.fa-solid{
-    display: block;
+    display: inline-flex;
     position: absolute;
-    color: white;
+    color: linen;
     font-weight: bold;
-    margin-left: 250px;
-    margin-top: 5px;
+    margin-left: 100px;
+    margin-top: 40px;
 }
 /*...............................Header text.........................*/
 .header-text{
