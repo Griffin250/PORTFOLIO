@@ -42,5 +42,11 @@ if (charIndex < words[wordIndex].length && !isDeleting) {
   setTimeout(type, typingSpeed);
 }
 }
-
 document.addEventListener('DOMContentLoaded', type);
+
+//Function to update and display thecurrent year in the copyright form ......
+function displayCurrentYear(){
+  const year = new Date().getFullYear();
+  document.getElementById("currentYear").textContent = year;
+}
+window.onload = displayCurrentYear
