@@ -278,9 +278,7 @@ h4.about-me-text{
 }
 
 /*...........................Tab-content in About me section.......................*/
-form{
-    margin-top: 50px;
-}
+
 .second-row{
     display: flex;
     justify-content: space-between;
@@ -595,9 +593,6 @@ transform: translateX(-100%);
   
 
 /*...............................Contact section.................................................*/
-form{
-    margin-top: -70px;
-}
 .contact-row{
    display: flex;
    justify-content: space-between;
@@ -810,7 +805,7 @@ form{
     color: black;
     font-size: 16px;
     border-radius: 5px;
-    padding: 10px 10px;
+    padding: 10px 2px;
     border:none;
     outline: none;
     resize: none;
@@ -830,6 +825,9 @@ form{
     font-size: 20px;
     font-weight: bold;
    
+}
+.message-box::placeholder{
+    color: black;
 }
 .message-container button:hover{
     opacity: 0.5;
@@ -993,13 +991,21 @@ form{
   }
   
 /*...............................Footer-section.........................*/
-.copyright{
-    background: rgb(234, 84, 30);
-    height: 35px;
+footer{
+    margin-bottom: 5px;
+}
+footer .underline{
+    border-top: 2px solid rgba(175, 139, 126, 0.326);
+    width: 75%;
+    margin: auto;
+}
+footer .copyright{
+    height: 40px;
     width: 100%; 
-    padding-top: 10px;
     position: absolute;
-    opacity: .6;
+    opacity: .8;
+    padding-top: 20px;
+   
 }
 .copyright p{
     text-align: center;
