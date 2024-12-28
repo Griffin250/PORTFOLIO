@@ -21,8 +21,17 @@
             <li><a href="#services">SERVICES</a></li>
             <li><a href="#portfolio">PORTFOLIO</a></li>
             <li><a href="#blog"> BLOG</a></li>
-            <li><a href="#contact"> CONTACT</a></li>
+            
+            <button class="contact-me-btn"> <a href="#contact"> CONTACT ME</a></button>
           </ul>
+         
+       
+          <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+            <input type="checkbox" class="input">
+            <span class="slider"></span>
+          </label>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text"> <span class="intro">  I am a </span> <span id="typingEffect" class="typing-effect"></span> <span class="cursor"></span>
@@ -37,7 +46,7 @@
         </div>
         <div class="btn">
         <button> <a href="#contact"> CONTACT ME</a></button>
-        <button><a href="images/Files/CV Available on Request.pdf" download>GET RESUME </a></button>
+        <button class="get-resume-btn"><a href="images/Files/CV Available on Request.pdf" download>GET RESUME </a></button>
         </div>
       </div>
     </div>
@@ -50,10 +59,12 @@
           <div class="about-column-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              I am an IT engineer, specialising in Web Development, UI/UX
-              Designing and Media Production with a strong background in
-              Cybertech and AI.
-              <br /><br />My passion lies in creating user-centric and seamless
+              <h4 class="about-me-text"> 
+                I specialize in Front-end Development, UI/UX Design, and Media Production, with expertise in modern 
+                technologies and a solid foundation in Cybertech and AI. 
+              
+            </h4>
+            <br />My passion lies in creating user-centric and seamless
               digital experiences, combining technology and design to craft
               elegant, intuitive interfaces and dynamic websites. <br />
               <br />I am dedicated to staying at the forefront of the
@@ -123,7 +134,7 @@
       <!--------------------Service section---------------------------------->
       <div id="services">
         <div class="service-container">
-          <h1 class="sub-title title">My Services</h1>
+          <h1 class="sub-title title">Areas of Expertise</h1>
           <div class="service-list">
             <div class="wrapper">
               <i class="fa-solid fa-code"></i>
@@ -194,7 +205,7 @@
     <!------------------------------Portfolio section----------------------->
     <div id="portfolio">
       <div class="portfolio-container">
-        <h1 class="sub-title title">My Experiences</h1>
+        <h1 class="sub-title title"> Latest Projects</h1>
         <div class="worklist">
           <div class="work">
             <img src="images/work-1.png" />
@@ -205,7 +216,7 @@
                 service brings your online vision to life with precision and
                 creativity."
               </p>
-              <a href="https://griffintechs.site/"><i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://sam-it-ub.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
           </div>
           <div class="work">
@@ -250,84 +261,65 @@
 
     
   <!-------------------------------Skills section ------logo slides--------------------------------------------->
-  <h1 class="small-title">My SKILLS</h1>
+  <h1 class="small-title">Expertise and <span> Skills</span></h1>
 
-  <!-------------------------------------------------------
-<div class="skills" id="skills">
-
-<div class="logo-slide">
-
-  <div class="logo-wrapper">
-    <img src="images/Language-logos/Bootstrap-.png" alt="Bootstrap">
-    <h3>Bootstrap</h3>
+<div class="skills-section">
+  <div class="skills">
+    <div class="logo-slide">
+      <div class="skill-card">
+        <img src="images/Language-logos/Bootstrap-.png" alt="Bootstrap">
+        <p>Bootstrap</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/Language-logos/Git-.png" alt="Git">
+        <p>Git</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/Language-logos/Nginx-.png" alt="Nginx">
+        <p>Nginx</p>
+      </div><div class="skill-card">
+        <img src="images/Language-logos/Github-icon.jpeg" alt="Github">
+        <p>Github</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/Language-logos/C..png" alt="C">
+        <p>C</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/Language-logos/Firebase-.png" alt="Firebase">
+        <p>Firebase</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/Language-logos/Tailwindcss.png" alt="Tailwindcss">
+        <p>Tailwindcss</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/Language-logos/Javascript-.png" alt="Javascript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/Language-logos/React...png" alt="React">
+        <p>React</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/Language-logos/CSS.png" alt="CSS">
+        <p>CSS</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/Language-logos/Html.png" alt="Html">
+        <p>HTML</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/Language-logos/PHP-.png" alt="PHP">
+        <p>PHP</p>
+      </div>
+    </div>
   </div>
-
-  <div class="logo-wrapper">
-    <img src="images/Language-logos/C..png" alt="C">
-    <h3>C</h3>
-  </div>
-
-  <div class="logo-wrapper">
-    <img src="images/Language-logos/CSS.png" alt="CSS">
-    <h3>CSS</h3>
-  </div>
-
-  <div class="logo-wrapper">
-    <img src="images/Language-logos/Docker-.png" alt="Docker">
-    <h3>Docker</h3>
-  </div>
-
-  <div class="logo-wrapper">
-    <img src="images/Language-logos/Firebase-.png" alt="Firebase">
-    <h3>Firebase</h3>
-  </div>
-
-  <div class="logo-wrapper">
-    <img src="images/Language-logos/Git-.png" alt="Git">
-    <h3>Git</h3>
-  </div>
-
-  <div class="logo-wrapper">
-    <img src="images/Language-logos/Html.png" alt="Html">
-    <h3>Html</h3>
-  </div>
-
-  <div class="logo-wrapper"> 
-  <img src="images/Language-logos/Javascript-.png" alt="Javascript">
-    <h3>Javascript</h3>
-  </div>
-
-  <div class="logo-wrapper"> 
-  <img src="images/Language-logos/kali.webp" alt="Kali">
-  <h3> Kali</h3>
 </div>
 
-<div class="logo-wrapper">
-<img src="images/Language-logos/Linux.png" alt="Linux">
-<h3> Linux</h3>
-</div>
 
-<div class="logo-wrapper">
-<img src="images/Language-logos/Nginx-.png" alt="Nginx">
-<h3>Nginx </h3>
-</div>
 
-<div class="logo-wrapper">
-<img src="images/Language-logos/PHP-.png" alt="PHP">
-<h3>PHP </h3>
-</div>
-
-<div class="logo-wrapper">
-<img src="images/Language-logos/python-.png" alt="Python">
-<h3>Python </h3>
-</div>
-
-<div class="logo-wrapper">
-<img src="images/Language-logos/React...png" alt="React">
-<h3> React</h3>
-</div>
-</div> 
------------------------------------------------------->
+<!--------------------------------------------------
 
 
 <div class="skills" id="skills">
@@ -370,10 +362,13 @@
   </div>
   
 <!------------------------------------
+
   <div class="blog-section" id="blog">
     <h1 class="small-title">My Blogs</h1> <hr>
   </div>
 -------------------------------->
+
+
     <!--------------------------Contact section--------------------->
  
     <form
@@ -390,7 +385,7 @@
           <p class="p2">Contact me to bring your ideas to life!</p>
           <a href="mailto:griffinugofficial@gmail.com">
             <i class="fa-solid fa-envelope"></i>
-            <span> isiahgriffin777@gmail.com </span></a>
+            <span> isiahgriffin@gts.no </span></a>
             <br /><br/>
           <a href="tel:+47-4056-9093"><i class="fa-solid fa-phone-flip"></i><span> +47-40569093 </span></a>
 

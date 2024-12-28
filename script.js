@@ -3,6 +3,9 @@ var copy = document.querySelector(".logo-slide").cloneNode(true);
 document.querySelector(".skills").appendChild(copy);
 
 
+
+
+
 var sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
@@ -50,3 +53,10 @@ function displayCurrentYear(){
   document.getElementById("currentYear").textContent = year;
 }
 window.onload = displayCurrentYear
+
+// Duplicate the logo-slide to create an infinite scrolling effect
+document.addEventListener("DOMContentLoaded", () => {
+  const originalSlide = document.querySelector(".logo-slide");
+  const copy = originalSlide.cloneNode(true);
+  document.querySelector(".skills").appendChild(copy);
+});
