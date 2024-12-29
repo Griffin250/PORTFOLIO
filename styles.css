@@ -384,7 +384,7 @@ transform: translateY(-10px);
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 10px;
     text-align: center;
     font-size: 15px;
     transition: height 0.5s;
@@ -411,6 +411,33 @@ transform: translateY(-10px);
 }
 .work:hover .layer{
     height: 100%;
+}
+
+.demo-links{
+    display: flex;
+    margin-top: 20px;
+}
+.demo-links button{
+    margin: 0 4px;
+    text-align: center;
+    padding: 0 8px;
+    border: none;
+    
+}
+.work button.live-demo-link{
+    width: auto;
+    height: 32px;
+    background: orange;
+  
+    border-radius: 4px;
+   
+}
+.work button.live-demo-link a{
+    border: none;
+    background: none;
+    color: white;
+    margin: auto;
+    text-align: center;
 }
 /*.....................................................new section..........................*/
 .small-title{
@@ -1285,3 +1312,133 @@ h1{
 
 
 }
+
+/* Footer Styling */
+.footer {
+    background: linear-gradient(to right, #0d0d1b, #141428);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .footer-name {
+    color: #9f65f1;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-icons {
+    margin: 10px 0;
+  }
+  
+  .footer-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-icons a:hover {
+    color: #9f65f1;
+  }
+  
+  .footer-links {
+    margin: 15px 0;
+  }
+  
+  .footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #9f65f1;
+  }
+  
+  .footer-copy {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbbbbb;
+  }
+
+  
+
+
+  /* Skills Section */
+.skills-section {
+    background: linear-gradient(to bottom, #0d0d1b, #141428);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .skills-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .skills-subtitle {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 40px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skills-card {
+    background: #0f0f1f;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+  }
+  
+  .skills-card h3 {
+    font-size: 20px;
+    color: #9f65f1;
+    margin-bottom: 15px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skills-list span {
+    background: #141428;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    border: 1px solid #222;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .skills-list span:hover {
+    background: #9f65f1;
+    color: black;
+    cursor: pointer;
+  }
+  
