@@ -10,10 +10,9 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </head>
     <!--------------------------------------Header section------------------------------->
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="images/Griffin-logo.png" class="logo"/>
+    <div id="header" class="header">
+        <nav class="navbar">
+          <img src="images/Isiahgriffin_logo-2.png" class="logo"/>
           <ul id="sidemenu">
             <i onclick="closemenu()"> <ion-icon name="close-circle-outline"></ion-icon></i>
             <li> <a href="#home" class="home"> <span>HOME</span></a> </li>
@@ -25,19 +24,20 @@
             <button class="contact-me-btn"> <a href="#contact"> CONTACT ME</a></button>
           </ul>
          
-       
-          <label class="switch">
+          <label class="switch ui-switch">
             <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
             <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
-            <input type="checkbox" class="input">
+            <input type="checkbox" class="input" onclick="toggleTheme()">
             <span class="slider"></span>
           </label>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+        
+        <div class="container"> 
         <div class="header-text"> <span class="intro">  I am a </span> <b><</b><span id="typingEffect" class="typing-effect"></span> <b>/></b><span class="cursor"></span>
           <h1>Hi, I'am Isiah <br /><span>G</span>riffin from Norway</h1>
         </div>
-        <div class="social-media-icons icons" style="display: non;">
+        <div class="social-media-icons icons">
           <a href="https://www.instagram.com/_griffin_techs_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
           <a href="javscript:void(0)"><i class="fa-brands fa-facebook"></i></a>
           <a href="javscript:void(0)"><i class="fa-brands fa-twitter"></i></a>
@@ -45,16 +45,16 @@
           <a href="https://github.com/Griffin250"> <i class="fa-brands fa-github"></i></a>
         </div>
         <div class="btn">
-        <button> <a href="https://github.com/Griffin250" target="_blank"> Github Profile</a></button>
-        <button class="get-resume-btn"><a href="https://www.linkedin.com/in/isiah-tuyisenge/" target="_blank">LinkedIn Profile </a></button>
+        <button class="github-btn"> <a href="https://github.com/Griffin250" target="_blank"> Github Profile</a></button>
+        <button class="linkedin-btn"><a href="https://www.linkedin.com/in/isiah-tuyisenge/" target="_blank">LinkedIn Profile </a></button>
         </div>
       </div>
     </div>
     <!--------------About me Section------------------------------------>
-    <div id="about">
-      <div class="aboutme-container">
+    <div id="about" class="aboutme">
+      <div class="aboutme-container ">
         <div class="first-row">
-          <div class="about-column-1"><img src="images/User-002.jpg" /></div>
+          <div class="about-column-1"><img src="images/Image-2.png" /></div>
 
           <div class="about-column-2">
             <h1 class="sub-title">About Me</h1>
@@ -132,7 +132,7 @@
         </div>
       </div>
       <!--------------------Service section---------------------------------->
-      <div id="services">
+      <div id="services" >
         <div class="service-container">
           <h1 class="sub-title title">Areas of Expertise</h1>
           <div class="service-list">
@@ -148,7 +148,7 @@
                 Our web design service brings your online vision to life with
                 precision and creativity.
               </p>
-              <a href="#">Learn more...</a>
+              <a href="#">Learn more<i class="fa-solid fa-arrow-right fa-shake"></i></a>
             </div>
             <div class="wrapper">
               <i class="fa-solid fa-crop-simple"></i>
@@ -163,7 +163,7 @@
                 My goal is to enhance user satisfaction and help your brand
                 succeed in the digital world.
               </p>
-              <a href="#">Learn more...</a>
+              <a href="#">Learn more <i class="fa-solid fa-arrow-right fa-shake"></i></a>
             </div>
             <div class="wrapper">
               <i class="fa-brands fa-app-store"></i>
@@ -180,7 +180,7 @@
                 Let's work together to bring your app vision to life with
                 captivating design and seamless usability.
               </p>
-              <a href="#">Learn more...</a>
+              <a href="#">Learn more <i class="fa-solid fa-arrow-right fa-shake"></i></a>
             </div>
 
             <div class="wrapper">
@@ -196,7 +196,7 @@
                 together.
               </p>
 
-              <a href="#">Learn more...</a>
+              <a href="#">Learn more <i class="fa-solid fa-arrow-right fa-shake"></i></a>
             </div>
           </div>
         </div>
@@ -217,6 +217,11 @@
                 creativity."
               </p>
               <a href="https://sam-it-ub.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+              <div class="demo-links">
+                <button class="live-demo-link"> <a href="#"> View Code </a></button>
+                <button class="live-demo-link"> <a href="#"> View Live Demo </a></button>
+              </div>
             </div>
           </div>
           <div class="work">
@@ -426,7 +431,7 @@
       class="contact-row" name="submit-to-google-sheet"
       action="https://formsubmit.co/c45c2d65dc44859a3e1103c6235c0a10" method="POST" target="_self" >
 
-      <div id="contact" class="contact-column">
+      <div id="contact" class="contact-column ">
         <div class="contact-container">
           <h1>Hire Me</h1>
           <p class="p1">

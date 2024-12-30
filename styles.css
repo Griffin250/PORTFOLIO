@@ -1,38 +1,64 @@
 *{
     margin: 0;
     padding: 0;
-box-sizing: border-box;
+    box-sizing: border-box;
 
 }
-body{
-    background:radial-gradient(circle, rgba(15, 10, 40, 0.962), rgb(0, 0, 0),rgb(52, 43, 43));
+body.light-theme{
+background: rgba(227, 230, 232, 0.847);
+    color: black;
+}
+body.dark-theme{
+    background:radial-gradient(circle, rgba(15, 10, 40, 0.962), rgb(0, 0, 0),rgb(43, 49, 52));
     color: white;
+}
+
+body.light-theme .header{
+    background-image: url(images/backgroundImage-2.png);
+}
+body.dark-theme .header{
+    background-image: url(images/BackgroundImage-1.png);
+}
+body.dark-theme .navbar{
+    background: none;
+    width: 100%;
+}
+body.light-theme .navbar{
+    background: rgb(34, 36, 38);
+    width: 100%;
+}
+body.light-theme .header-text{
+    color: rgb(46, 46, 49);
 }
 html{
     scroll-behavior: smooth;
 }
 /*..........................................................Header section...............................*/
-#header{
+.header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background\ copy-2.png);
-    border-radius: 16px;
+    border-radius: 0px 0px 16px 16px;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
-.container{
-    padding: 10px 5%;
-}
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
 }
-.logo{
-    width: 150px;
+.container{
+    margin: 0 24px;
+}
+img.logo{
+    width: 90px;
     height: 80px;
     cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 nav ul li{
     display: inline-block;
@@ -49,12 +75,8 @@ nav ul li a{
     color: white;
     position: relative;
 }
-nav ul li a.home{
-    text-decoration: underline brown solid;
-    color: brown;  
-}
 nav ul button.contact-me-btn{
-     width: 130px;
+     width: 140px;
     height: 38px;
     background: orangered;
     border: 1px solid brown;
@@ -75,13 +97,14 @@ nav ul button.contact-me-btn:hover{
 }
 
 /*................................theme-toggle......*/
-/* From Uiverse.io by andrew-demchenk0 */ 
+
 .switch {
     font-size: 17px;
     position: relative;
     display: inline-block;
     width: 60px;
     height: 28px;
+    z-index: 1;
   }
   
   .switch input {
@@ -97,7 +120,7 @@ nav ul button.contact-me-btn:hover{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #8373fc;
+    background-color: #a5223a;
     transition: .4s;
     border-radius: 30px;
   }
@@ -108,13 +131,13 @@ nav ul button.contact-me-btn:hover{
     height: 25px;
     width: 25px;
     border-radius: 20px;
-    left: 2px;
-    bottom: 2px;
-    z-index: 2;
-    background-color: #e8e8e8;
+    left: 1.7px;
+    bottom: 1.2px;
+    z-index: 1;
+    background-color:rgb(211, 223, 227);
     transition: .4s;
   }
-  
+
   .sun svg {
     position: absolute;
     top: 2px;
@@ -125,10 +148,10 @@ nav ul button.contact-me-btn:hover{
   }
   
   .moon svg {
-    fill: #73C0FC;
+    fill: #0bafeb;
     position: absolute;
-    top: 2px;
-    left: 5px;
+    top: 4px;
+    left: 4px;
     z-index: 1;
     width: 20px;
     height: 20px;
@@ -173,11 +196,11 @@ nav ul button.contact-me-btn:hover{
   }
   
   .input:checked + .slider {
-    background-color: #183153;
+    background-color: #531818;
   }
   
   .input:focus + .slider {
-    box-shadow: 0 0 1px #183153;
+    box-shadow: 0 0 1px #531818;
   }
   
   .input:checked + .slider:before {
@@ -197,14 +220,14 @@ nav i.fa-solid{
     display: none;
 }
 nav ul li a:hover{
-    text-decoration: underline;
+    border-bottom: 1.5px solid orangered;
     color: brown;
-    transition: 0.4s;
+    transition: 0.2s linear;
 }
 /*..............................Contact me button..........................*/
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 16%;
     font-size: 25px;
 }
 .header-text p{
@@ -224,6 +247,7 @@ font-weight: 800;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow: hidden;
     color: #ff004f;
+    font-weight: 800;
     white-space: nowrap;
     border-right: 2px solid orangered;
     animation: typing 5s steps(27, end) infinite alternate, blink-caret .5s step-end infinite;
@@ -242,8 +266,12 @@ font-weight: 800;
 .header-text h1 span{
     color: brown;
 }
-
-
+body.light-theme .header-text h1 span{
+    color: black;
+}
+body.light-theme .header-text .typing-effect{
+    color: rgb(247, 2, 2);
+}
 /*.....................About me section...............*/
 #about{
     padding: 80px;
@@ -268,15 +296,21 @@ font-weight: 800;
     color: white;
     font-size: 40px;
 }
+body.light-theme .about-column-2 .sub-title{
+    color: black;
+}
 h4.about-me-text{
-    color: rgba(168, 156, 150, 0.814);
-    font-weight: 500;
+    color: whitesmoke;
+    font-weight:500;
     font-size: 18px;
 }
 .about-me{
     color: rgba(168, 156, 150, 0.814);
 }
-
+body.light-theme .aboutme h4.about-me-text{
+color: black;
+font-weight: 600;
+}
 /*...........................Tab-content in About me section.......................*/
 
 .second-row{
@@ -305,9 +339,13 @@ h4.about-me-text{
     color: white;
     font-weight: 600;
 }
+body.light-theme .service-container .sub-title{
+    color: black;
+}
 #services{
     padding:30px 0;
 }
+
 .service-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -328,20 +366,43 @@ h4.about-me-text{
     margin-top: -50px;
   margin-left: 80px;
 }
+body.light-theme .service-list div i{
+    color: whitesmoke;
+}
 .service-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
+body.light-theme .service-list div h2{
+    color: white;
+}
+body.light-theme .service-list div p{
+    color: white;
+}
 .service-list div a{
     color: white;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 20px;
     display: inline-block;
 }
-.service-list div:hover{
+.service-list div a i{
+font-size: 16px;
+width: 24px;
+margin-left: 12px;
+}
+.service-list div a:hover{
+color: black;
+}
+.wrapper:hover a{
+    color: black;
+    transition: 0.2s ease;
+    transform: translateX(10px);
+}
+.service-list .wrapper:hover{
 background-color: brown;
+transition: 0.3s ease;
 transform: translateY(-10px);
 }
 
@@ -393,6 +454,13 @@ transform: translateY(-10px);
     font-weight:bold;
     margin-bottom: 20px;
     font-size: 20px;
+    color: whitesmoke;
+}
+body.light-theme .layer h3{
+    color: whitesmoke;
+}
+body.light-theme .layer p{
+    color: whitesmoke;
 }
 .layer a{
     text-decoration: none;
@@ -427,10 +495,8 @@ transform: translateY(-10px);
 .work button.live-demo-link{
     width: auto;
     height: 32px;
-    background: orange;
-  
-    border-radius: 4px;
-   
+    background: none;
+    border:2px solid black
 }
 .work button.live-demo-link a{
     border: none;
@@ -438,6 +504,8 @@ transform: translateY(-10px);
     color: white;
     margin: auto;
     text-align: center;
+    justify-content: center;
+
 }
 /*.....................................................new section..........................*/
 .small-title{
@@ -690,9 +758,27 @@ transform: translateX(-100%);
     width: 140px;
     height: 40px;
     background: none;
-    border: 1px solid brown;
+    border: none;
     border-radius: 8px;
     margin: 0 30px;
+    cursor: pointer;
+}
+.btn button.linkedin-btn{
+    background: orangered;
+    opacity: .7;
+}
+.btn button.linkedin-btn:hover{
+    opacity: 1;
+}
+body.light-theme .btn button.github-btn{
+   border: 1px solid black;
+}
+body.dark-theme .btn button.github-btn{
+    border: 1px solid brown;
+}
+body.light-theme .btn button.github-btn a{
+    color: black;
+    font-weight: 700;
 }
 .btn .get-resume-btn{
     background: orangered;
@@ -1018,34 +1104,71 @@ transform: translateX(-100%);
   }
   
 /*...............................Footer-section.........................*/
-footer{
-    margin-bottom: 5px;
-}
-footer .underline{
-    border-top: 2px solid rgba(175, 139, 126, 0.326);
-    width: 75%;
-    margin: auto;
-}
-footer .copyright{
-    height: 40px;
-    width: 100%; 
-    position: absolute;
-    opacity: .8;
-    padding-top: 20px;
-   
-}
-.copyright p{
+
+
+.footer {
+    background: linear-gradient(to bottom right, #11111b, #101029);
+    color: white;
     text-align: center;
-    align-items: center;
-    font-size: 18px;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+    border-radius: 16px 16px 0 0;
+  }
+  body.light-theme .footer{
+    background: rgb(48, 51, 54);
+  }
+  .footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .footer-name {
+    color: whitesmoke;
+    font-size: 32px;
+    opacity: .7;
     font-weight: bold;
-    margin-left: -50px;
-}
-.copyright p span{
-    margin-left: 500px;
-}
+    margin-bottom: 20px;
+  }
+  
+  .footer-icons {
+    margin: 10px 0;
+  }
+  
+  .footer-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-icons a:hover {
+    color: brown;
+  }
+  
+  .footer-links {
+    margin: 15px 0;
+  }
+  
+  .footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: orangered;
+  }
+  
+  .footer-copy {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbbbbb;
+  }
 
-
+  
 
 
 
@@ -1061,9 +1184,10 @@ justify-content: space-evenly;
 }
 .logo{
 float: left;
-margin-left: -50%;
+margin-left: -30%;
 margin-top: 2px;
 }
+
     #header{
         width: 100%;
         background-image: url(images/User-image.jpg);
@@ -1080,7 +1204,8 @@ margin-top: 2px;
     font-size: 20px;
 }
 .switch{
-    display: none;
+    display: block;
+    margin-left: -15%;
 }
 /*........................................Menu section......................*/
 nav ul{
@@ -1091,13 +1216,18 @@ nav ul{
   width: 200px;
   height: 400px;
   padding-top:0px;
-  z-index: 2;
+  z-index: 1;
   border-radius: 5px;
   transition:right 0.7s;
 }
 .contact-me-btn{
-    display: none;
+   width: 100px;
+   display: none;
+   
 } 
+.contact-me-btn a{
+    font-size: 12px;
+}
 nav ul i ion-icon{
     display: block;
     color: white;
@@ -1119,7 +1249,7 @@ nav i.fa-solid{
     position: absolute;
     color: linen;
     font-weight: bold;
-   right: 0;
+   right: -8%;
     margin-top: 50px;
 }
 /*...............................Header text.........................*/
@@ -1313,71 +1443,8 @@ h1{
 
 }
 
-/* Footer Styling */
-.footer {
-    background: linear-gradient(to right, #0d0d1b, #141428);
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .footer-content {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  .footer-name {
-    color: #9f65f1;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .footer-icons {
-    margin: 10px 0;
-  }
-  
-  .footer-icons a {
-    color: white;
-    font-size: 20px;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footer-icons a:hover {
-    color: #9f65f1;
-  }
-  
-  .footer-links {
-    margin: 15px 0;
-  }
-  
-  .footer-links a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-  }
-  
-  .footer-links a:hover {
-    color: #9f65f1;
-  }
-  
-  .footer-copy {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #bbbbbb;
-  }
-
-  
-
-
   /* Skills Section */
 .skills-section {
-    background: linear-gradient(to bottom, #0d0d1b, #141428);
     color: white;
     text-align: center;
     padding: 60px 20px;

@@ -60,3 +60,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const copy = originalSlide.cloneNode(true);
   document.querySelector(".skills").appendChild(copy);
 });
+
+
+// Function to toggle theme between light and dark
+function toggleTheme() {
+  // Check if dark theme is already active
+  if (document.body.classList.contains('dark-theme')) {
+      // Switch to light theme
+      document.body.classList.remove('dark-theme');
+      document.body.classList.add('light-theme');
+      // Store theme preference in localStorage
+      localStorage.setItem('theme', 'light');
+  } else {
+      // Switch to dark theme
+      document.body.classList.remove('light-theme');
+      document.body.classList.add('dark-theme');
+      // Store theme preference in localStorage
+      localStorage.setItem('theme', 'dark');
+  }
+}
+
+// --------------------Load saved theme on page load
+window.onload = function() {
+  // Get theme preference from localStorage
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  // Apply the saved theme
+  document.body.classList.add(savedTheme + '-theme');
+};
