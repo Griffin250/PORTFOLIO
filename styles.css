@@ -14,10 +14,10 @@ body.dark-theme{
 }
 
 body.light-theme .header{
-    background-image: url(images/backgroundImage-2.png);
+    background-image: url(images/backgroundImage_2.png);
 }
 body.dark-theme .header{
-    background-image: url(images/backgroundImage-1.png);
+    background-image: url(images/backgroundImage_1.png);
 }
 body.dark-theme .navbar{
     background: none;
@@ -75,6 +75,9 @@ nav ul li a{
     font-weight: bold;
     color: white;
     position: relative;
+}
+nav ul li a span.home{
+    display: none;
 }
 nav ul button.contact-me-btn{
      width: 140px;
@@ -1201,10 +1204,10 @@ margin-top: 2px;
         
 }
 body.light-theme .profile-image{
-    background-image: url(images/backgroundImage-4.png);
+    background-image: url(images/backgroundImage_4.png);
 }
 body.dark-theme .profile-image{
-    background-image: url(images/backgroundImage-5.jpg);
+    background-image: url(images/backgroundImage_5.png);
 }
 .intro{
     font-size: 20px;
