@@ -17,7 +17,7 @@ body.light-theme .header{
     background-image: url(images/backgroundImage-2.png);
 }
 body.dark-theme .header{
-    background-image: url(images/BackgroundImage-1.png);
+    background-image: url(images/backgroundImage-1.png);
 }
 body.dark-theme .navbar{
     background: none;
@@ -41,6 +41,7 @@ html{
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    z-index: 1;
 }
 
 nav{
@@ -515,26 +516,9 @@ body.light-theme .layer p{
 .small-title span{
 transform: rotate(45deg);
 }
-hr{
-    width: 90%;
-    margin: auto;
-}
+
 /*.....................................my skills section ...................................*/
-.skills{
-    width: 90%;
-   padding: 60px 0;
-   white-space: nowrap;
-    overflow: hidden;
-    margin: auto;
-}
-.skills-2{
-    width: 90%;
-   padding: 60px 0;
-   white-space: nowrap;
-    overflow: hidden;
-    margin: auto;
-    display: none;
-}
+
 .logo-slide{
     animation: 20s slide infinite linear;
     display: inline-block;
@@ -566,61 +550,6 @@ transform: translateX(0%);
 transform: translateX(-100%);
     }
 }
-
-/* ............................................................
-.logo-slide {
-    width: 100%;
-    position: relative;
-    display:flex;
-    margin: 70px auto;
-    align-items: center;
-    white-space: no-wrap;
-    animation: 25s slide linear infinite;
-}
-
-.logo-wrapper{
-    border: 1px solid rgb(39, 118, 93); 
-    border-top: 3px solid rgba(36, 138, 87, 0.862);
-    border-bottom: 3px solid rgba(36, 138, 87, 0.862);
-     border-radius: 5px;
-    width: 140px;
-    height: 100px;
-    padding: 2px;
-    margin: 0 20px;
-    cursor: pointer; 
-}
-.logo-wrapper h3{
-text-align: center;
-}
-
-.logo-slide img {
-    height: 60px; 
-    margin: 5px 5px;
-    cursor: pointer;
-    align-items: center;
-    border-radius: 5px;
-    padding: 10px 5px;
-    aspect-ratio: 3/2;
-    object-fit: contain;
-}
-
-.logo-wrapper img:hover {
-    transform: scale(1.3);
-    transition: 0.3s;
-}
-.logo-slide:hover{
-    transform:translate(4px);
-    animation-play-state: paused;  
-}
-@keyframes slide{
-    from{
-transform: translateX(0%);
-    }
-    to{
-transform: translateX(-100%);
-    }
-}
-...............................................*/
 
   
   .skills-section {
@@ -1201,7 +1130,7 @@ margin-top: 2px;
         
 }
 body.light-theme .profile-image{
-    background-image: url(images/BackgroundImage-4.png);
+    background-image: url(images/backgroundImage-4.png);
 }
 body.dark-theme .profile-image{
     background-image: url(images/backgroundImage-5.jpg);
@@ -1343,7 +1272,7 @@ h1{
 #portfolio{
     padding: 20px;
     margin:0px auto;
-    width: 75%;
+    width: 90%;
 }
 .portfolio-container h1{
     font-size: 20px;
@@ -1358,7 +1287,6 @@ h1{
 }
 .skills-section{
     width: 100%;
-  
     margin: auto;
 }
 .blog-section{
@@ -1402,10 +1330,6 @@ h1{
 /*...........................................................*/
 .logo-slide img{
     margin: 0 0px;
-}
-.skills{
-    width:75%;
-    margin: 0 auto;
 }
 .buttonDownload{
     font-size: 10px;
