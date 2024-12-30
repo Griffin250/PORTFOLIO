@@ -7,12 +7,16 @@ document.querySelector(".skills").appendChild(copy);
 
 
 var sidemenu = document.getElementById("sidemenu");
+var toggler = document.getElementById("switch");
 
 function openmenu() {
   sidemenu.style.right = "0";
+  toggler.style.visibility = "hidden";
 }
 function closemenu() {
   sidemenu.style.right = "-200px";
+  toggler.style.visibility = "visible";
+
 }
 
 const words = ["Web Designer","UI/UX Designer", "FrontEnd Developer","BackEnd Developer",  "Freelancer"];

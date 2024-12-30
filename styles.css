@@ -51,7 +51,7 @@ nav{
 
 }
 .container{
-    margin: 0 24px;
+    margin: 0 25px;
 }
 img.logo{
     width: 90px;
@@ -1187,15 +1187,24 @@ float: left;
 margin-left: -30%;
 margin-top: 2px;
 }
-
-    #header{
+.container{
+    margin-top: -20%;
+    height: auto;
+}
+.profile-image{
         width: 100%;
-        background-image: url(images/User-image.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 50vh;
-        margin-bottom: 40px;
+        height: 40vh;
+       
+        
+}
+body.light-theme .profile-image{
+    background-image: url(images/BackgroundImage-4.png);
+}
+body.dark-theme .profile-image{
+    background-image: url(images/backgroundImage-5.jpg);
 }
 .intro{
     font-size: 20px;
@@ -1211,14 +1220,15 @@ margin-top: 2px;
 nav ul{
   background:brown; 
   top: 0;
-  right: 0;
+  right: -50%;
   position: fixed;
   width: 200px;
-  height: 400px;
+  height: auto;
   padding-top:0px;
   z-index: 1;
   border-radius: 5px;
   transition:right 0.7s;
+
 }
 .contact-me-btn{
    width: 100px;
@@ -1233,7 +1243,8 @@ nav ul i ion-icon{
     color: white;
     font-size: 40px;
     font-weight: 800;
-    margin: 20px 20px;
+    margin: 10px 40px;
+    float: right;
 }
 nav ul li{
     display: block;
@@ -1253,6 +1264,7 @@ nav i.fa-solid{
     margin-top: 50px;
 }
 /*...............................Header text.........................*/
+
 .header-text{
     margin-top: 50%;
 }
