@@ -4,6 +4,9 @@
     box-sizing: border-box;
 
 }
+#blogPosts{
+    display: none;
+}
 body.light-theme{
 background: rgba(227, 230, 232, 0.847);
     color: black;
@@ -42,6 +45,7 @@ html{
     background: rgb(255, 42, 0);
     border-radius: 8px;
 }
+
 /*..........................................................Header section...............................*/
 .header{
     width: 100%;
@@ -307,7 +311,7 @@ body.light-theme .header-text .typing-effect{
 .about-column-2 .sub-title{
     font-weight: 600;
     color: white;
-    font-size: 40px;
+    font-size: 44px;
 }
 body.light-theme .about-column-2 .sub-title{
     color: black;
@@ -348,7 +352,7 @@ font-weight: 600;
 /*..........................Service section..................................*/
 
 .service-container .sub-title{
-    font-size:50px;
+    font-size:44px;
     color: white;
     font-weight: 600;
 }
@@ -438,12 +442,19 @@ transform: translateY(-10px);
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: auto;
+   
 }
 .work img{
     width: 100%;
-    display: block;
+    height: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
     border-radius: 10px;
     transition: transform 0.5s;
+}
+.work:hover img{
+    opacity: .4;
 }
 .layer{
     width: 100%;
@@ -463,11 +474,15 @@ transform: translateY(-10px);
     font-size: 15px;
     transition: height 0.5s;
 }
-.layer h3{
+
+.layer h2{
     font-weight:bold;
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 12px;
+    font-size: 22px;
     color: whitesmoke;
+}
+.layer h3{
+    margin-bottom: 8px;
 }
 body.light-theme .layer h3{
     color: whitesmoke;
@@ -480,12 +495,12 @@ body.light-theme .layer p{
     color: brown;
     background: white;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
     font-size: 18px;
     align-items: center;
-    margin-top: 20px;
-    line-height: 50px;
+    margin-top: 2px;
+    line-height: 36px;
 }
 .work img:hover{
     transform: scale(1.5);
@@ -494,31 +509,37 @@ body.light-theme .layer p{
     height: 100%;
 }
 
-.demo-links{
-    display: flex;
-    margin-top: 20px;
+button.demo-link{
+  border: none;
+  background: rgb(6, 6, 23);
+  opacity: .8;
+  border-radius: 8px;
+  padding: 2px 5px;
+  cursor: pointer;
 }
-.demo-links button{
-    margin: 0 4px;
-    text-align: center;
-    padding: 0 8px;
-    border: none;
-    
+button.demo-link:hover{
+    opacity: 1;
+    transition: .3s ease;
 }
-.work button.live-demo-link{
-    width: auto;
-    height: 32px;
-    background: none;
-    border:2px solid black
+button.demo-link a{
+background: none;
+text-decoration: none;
+color: white;
+font-size: 12px;
 }
-.work button.live-demo-link a{
-    border: none;
-    background: none;
+.work .techs-used span{
+    background: #141428;
     color: white;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-
+    padding: 2px 5px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+    opacity: .7;
+}
+.work .techs-used span:hover{
+    opacity: 1;
+    transition: .3s;
 }
 /*.....................................................new section..........................*/
 .small-title{
@@ -953,28 +974,6 @@ body.light-theme .btn button.github-btn a{
 .message-container button:hover{
     opacity: 0.5;
   
-}
-
-/*.................................Back to top button.........................*/
-
-.bottom-top:hover{
-    opacity: 0.4;
-    transition: 0.2s;
-    border: white solid 1px;
-}
-.bottom-top a{
-    text-decoration: none;
-}
-.bottom-top a i{
-    color: white;
-    margin-left: 10px;
-    font-size: 16px;
-}
-
-.bottom-top a span{
-    color:white;
-    font-size: 17px;
-    font-weight: bold;
 }
 
 /* ..........Submit button -...................*/ 
