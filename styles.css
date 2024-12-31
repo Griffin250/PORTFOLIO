@@ -33,6 +33,15 @@ body.light-theme .header-text{
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+    width: 4px; 
+    height: 2px; 
+    cursor: pointer;
+  }
+::-webkit-scrollbar-thumb{
+    background: rgb(255, 42, 0);
+    border-radius: 8px;
+}
 /*..........................................................Header section...............................*/
 .header{
     width: 100%;
