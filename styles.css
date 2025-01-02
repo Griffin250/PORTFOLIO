@@ -297,6 +297,7 @@ body.light-theme .header-text .typing-effect{
 .about-column-1 img{
     border-radius: 15px;
     width: 100%;
+    margin-top: -15%;
 }
 .about-column-2{
     flex-basis: 60%;
