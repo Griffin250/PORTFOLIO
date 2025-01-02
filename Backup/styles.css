@@ -96,7 +96,7 @@ nav ul button.contact-me-btn{
      width: 140px;
     height: 38px;
     background: orangered;
-    border: none;
+    border: 1px solid brown;
     border-radius: 8px;
     margin: 0 30px;
     cursor: pointer;
@@ -225,10 +225,15 @@ nav ul button.contact-me-btn:hover{
   }
 
 
-nav ul i.close-btn{
+nav ul i ion-icon{
     display: none;
 }
-nav i.menu-icon{
+nav i.fa-solid{
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    color: brown;
+    font-weight: 500px;
     display: none;
 }
 nav ul li a:hover{
@@ -285,7 +290,9 @@ body.light-theme .header-text .typing-effect{
     color: rgb(247, 2, 2);
 }
 /*.....................About me section...............*/
-
+#about{
+    padding: 80px;
+}
 .first-row{
     display: flex;
     justify-content: space-between;
@@ -352,10 +359,8 @@ font-weight: 600;
 body.light-theme .service-container .sub-title{
     color: black;
 }
-.services{
+#services{
     padding:30px 0;
-    width: 95%;
-    margin: auto;
 }
 
 .service-list{
@@ -364,7 +369,7 @@ body.light-theme .service-container .sub-title{
     grid-gap: 40px;
     margin-top: 50px;
 }
-.service-list .wrapper{
+.service-list div{
     background: rgb(41, 41, 41);
     padding: 40px;
     font-size: 16px;
@@ -421,10 +426,10 @@ transform: translateY(-10px);
 /*....................................Portfolio section......................*/
 #portfolio{
     padding: 80px;
-    margin-top: 50px;
+    margin-top: -150px;
 }
 .portfolio-container h1{
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 600;
 }
 .worklist{
@@ -545,7 +550,9 @@ font-size: 12px;
     margin-left: 5%;
     font-size: 44px;
 }
-
+.small-title span{
+transform: rotate(45deg);
+}
 
 /*.....................................my skills section ...................................*/
 
@@ -583,6 +590,11 @@ transform: translateX(-100%);
 
 
   /* ....................................Skills Section............................... */
+  .skills-section {
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
   
   .skills-title {
     font-size: 36px;
@@ -608,7 +620,7 @@ transform: translateX(-100%);
     border: 1px solid #222;
     border-radius: 8px;
     padding: 20px;
-    width: 360px;
+    width: 400px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     text-align: left;
   }
@@ -650,18 +662,8 @@ transform: translateX(-100%);
     overflow: hidden;
     width: 95%;
     margin: auto;
-    color: white;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
   }
-  body.light-theme .skills-section p{
-    font-size: 18px;
-    color: rgb(16, 10, 36);
-}
-body.dark-theme .skills-section p{
-    font-size: 18px;
-    color: rgb(207, 205, 213);
-}
+  
   .skills-title {
     font-size: 2rem;
     color: #a78bfa;
@@ -910,7 +912,7 @@ body.light-theme .btn button.github-btn a{
 /*.................................Message-section.....................*/
 .contact-container button{
     margin-top: 20px;
-    width: auto;
+    width: 50%;
     height: 40px;
     border-radius: 8px;
     background:orangered;
@@ -928,14 +930,13 @@ body.light-theme .btn button.github-btn a{
 }
 
 .message-container{
-    padding: 10px;
-    margin: auto;
-    margin-top: 120px;
-    margin-left: -25%;
+    padding: 100px;
+    margin-left: -1000px;
+    margin-top: 50px;
 }
 
 .message-container input{
-    width: 500px;
+    width: 550px;
     height: 40px;
     border-radius: 8px;
     margin-bottom: 16px;
@@ -944,7 +945,7 @@ body.light-theme .btn button.github-btn a{
     outline: none;
 }
 .message-container textarea{
-    width: 500px;
+    width: 550px;
     height: 100px;
     color: black;
     font-size: 16px;
@@ -957,11 +958,11 @@ body.light-theme .btn button.github-btn a{
 
 .message-container button {
     height: 40px;
-    width: auto;
+    width: 20%;
     border: none;
     outline: none;
     border-radius: 8px;
-    margin:auto;
+    margin-left: 390px;
     margin-top: 5px;
     background: orangered;
     color: white;
@@ -1186,37 +1187,72 @@ body.light-theme .btn button.github-btn a{
 
 
   
+
+
 /*....................................................CSS for small screens......................*/
-@media only screen and (max-width:600px) {
-    /*....................................................Header section......................................*/
-  nav {
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-    position: relative;
-  }
 
-  /* Logo adjustments */
-  nav .logo {
+@media only screen and (max-width:600px){
+/*....................................................Header section......................................*/
+nav{
+justify-content: space-evenly;
+}
+.logo{
+float: left;
+margin-left: -30%;
+margin-top: 2px;
+}
+.container{
+    margin-top: -20%;
+    height: auto;
+}
+.profile-image{
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+       
+        
+}
+body.light-theme .profile-image{
+    background-image: url(images/backgroundImage_4.png);
+}
+body.dark-theme .profile-image{
+    background-image: url(images/backgroundImage_5.png);
+}
+.intro{
+    font-size: 20px;
+}
+.header-text{
+    font-size: 20px;
+}
+.switch{
     display: block;
-    width: 60px; /* Adjust logo size */
-    height: 64px;
-  }
+    margin-left: -15%;
+}
+/*........................................Menu section......................*/
+nav ul{
+  background:brown; 
+  top: 0;
+  right: -50%;
+  position: fixed;
+  width: 200px;
+  height: auto;
+  padding-top:0px;
+  z-index: 1;
+  border-radius: 5px;
+  transition:right 0.7s;
 
-  /* Menu icon positioning */
-  nav i.menu-icon {
-    display: block;
-    color: #fff; 
-    position: absolute;
-    right: -5%;
-    top: 30px;
-    font-size: 30px;
-    cursor: pointer;
-    width: 80px;
-    height: 80px;
-    font-weight: 500px;
-  }
-  nav ul i.close-btn{
+}
+.contact-me-btn{
+   width: 100px;
+   display: none;
+   
+} 
+.contact-me-btn a{
+    font-size: 12px;
+}
+nav ul i ion-icon{
     display: block;
     color: white;
     font-size: 40px;
@@ -1224,237 +1260,238 @@ body.light-theme .btn button.github-btn a{
     margin: 10px 40px;
     float: right;
 }
-
-
-nav ul {
-    background: rgb(165, 42, 42);
-    top: 0;
-    right: -54%;
-    position: absolute;
-    width: 200px;
-    height: auto;
-    z-index: 1;
-    border-radius: 5px;
-    transition: right 0.7s;
-  }
-  nav ul li {
-      display: block;
-      margin-left: 20px;
-      padding: 5px 5px;
-      margin-top: 28px;
-    }
-      
-  nav ul li a {
-      font-size: 16px;
-      font-weight: 600;
-    }
-   
-  /* Theme switch adjustments */
-  label.switch {
-    position: absolute;
-    right: 40%; 
-    top: 30px;
-    display: flex;
-    align-items: center;
-    z-index: 10;
-  }
-
-    .container {
-      margin-top: -30%;
-      height: auto;
-      width: auto;
-    }
-.container .btn{
-    display: flex;
+nav ul li{
+    display: block;
+   margin-left: 25px;   
+   padding: 50px 5px;
+   margin-top: -80px;
 }
-    body.light-theme .profile-image {
-      background-image: url(images/backgroundImage_4.png);
-    }
-    body.dark-theme .profile-image {
-      background-image: url(images/backgroundImage_5.png);
-    }
-    .intro,
-    .header-text {
-      font-size: 20px;
-    }
-    .contact-me-btn {
-      width: 100px;
-      display: none;
-    }
-    .contact-me-btn a {
-      font-size: 12px;
-    }
-    .profile-image {
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 40vh;
-      }
-    .header-text {
-      margin-top: 50%;
-    }
-    .header-text p {
-      font-size: 16px;
-    }
-    .header-text h1 {
-      font-size: 20px;
-      margin: 12px 0;
-    }
+nav ul li a{
+    font-size: 18px;
+}
+nav i.fa-solid{
+    display: inline-flex;
+    position: absolute;
+    color: linen;
+    font-weight: bold;
+   right: -8%;
+    margin-top: 50px;
+}
+/*...............................Header text.........................*/
 
-    /*..........................................About me section..........................................*/
-    
+.header-text{
+    margin-top: 50%;
+}
+.header-text p{
+    font-size: 16px;
+}
+.header-text h1{
+    font-size: 20px;
+    margin: 12px 0;
+}
 
-.aboutme{
-        width: auto;
-        margin: auto;
-    }
+/*..............................................About me section.....................................*/
+#about{
+    padding: 12px;
+}
 .first-row{
-        display: block;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin: 0 20px;
-    }
-.about-column-1 img {
+    flex-wrap: nowrap;
+    display:inline-flex;
+    margin-left: -250px;
+}
+.about-column-1 img{
     display: none;
 }
-.about-column-1{
-    flex-basis: auto;
-  
+.about-column-2{
+    flex-basis: 60%;
 }
+.about-column-2 p{
+    width: 70%;
+}
+.about-column-2 .sub-title{
+    font-size: 30px;
+}
+
 .second-row{
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
 }
+
 .tab-column h2{
-    font-size: 28px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+/*............................................Service section........................*/
+#services{
+    margin:50px auto;
+}
+h1{
+    font-size: 20px;
+    font-weight: 800;
+}
+#services{
+    padding: 12px 0;
+}
+.service-list{
+    display: inline-block;
+    margin-top: 20px;
+}
+.service-list div{
+    width: 75%;
+    margin:20px auto;
+    padding: 20px;
+}
+.service-list div h2{
+    font-size: 25px;
     font-weight: bold;
-    margin-top: 50px;
-    text-align: center;
 }
-.tab-column ul li{
-    list-style: none;
-    margin-right: 5px;
-    margin-top: 15px;
+.small-title{
+    margin-left: 5%;
+    font-size: 20px;
 }
 
-/*..........................................Service section..........................................*/
-.services{
-    margin-bottom: 32px;
-}
-.service-list .wrapper{
-    background: rgb(41, 41, 41);
-    padding: 40px;
-    width: 85%;
-    margin: auto;
-}
-.service-container .sub-title{
-    font-size: 32px;
-    border-top: 2px solid rgb(42, 38, 56);
-    width: 90%;
-    margin: 20px auto;
-}
 
-/*..........................................Portfolio section..........................................*/
-.portfolio-container{
-    margin: auto;
-    width: auto;
-}
-.portfolio-container h1.sub-title{
-    font-size: 32px;
-    border-top: 2px solid rgb(42, 38, 56);
-    width: 90%;
-}
+/*..........................................Portfolio section................................*/
 #portfolio{
-    padding: 24px;
-    margin-top: 0px;
+    padding: 20px;
+    margin:0px auto;
+    width: 90%;
 }
 .portfolio-container h1{
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 20px;
 }
-.worklist{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
-    grid-gap: 40px;
-    margin-top: 50px;  
-}
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    height: auto;
-   
-}
-.work img{
-    width: 100%;
+.layer{
     height: 100%;
-    aspect-ratio: 3/2;
-    object-fit: cover;
+    margin-top: 10px;
+}
+.techs-container h2{
+    font-size: 18px;
+}
+.techs-container h3{
+    font-size: 16px;
+}
+.techs-container button{
+    margin-top: -12px;
+    opacity: 1;
+}
+
+}
+.work .techs-used span{
+    background: #09092d;
+    color: white;
+    padding: 5px 5px;
+    opacity: .8;
+}
+.skills-section{
+    width: 100%;
+    margin: auto;
+}
+.blog-section{
+    display: none;
+}
+body.light-theme .skills-card{
+    background: #252543;
+}
+/*..............................Contact section........................*/
+.contact-column{
+    margin: auto;
+}
+.message-container{
+    margin: auto;
+}
+.contact-container{
+    margin: 30px auto;
+}
+.contact-container .p1{
+    font-size: 14px;
+}
+.contact-container .p2{
+    font-size: 16px;
+}
+.contact-container button{
+    margin: 15px 20px;
+    width: 160px;
+}
+.message-container{
+    margin-top: 20px;
+    margin-left: -80px;
+    margin-top: -40px;
+}
+.message-container input{
+    width: 250px;
+}
+.message-container textarea{
+    width: 250px;
+}
+.message-container .button{
+    margin-left: 50px;
+    width: 150px;
+}
+/*...........................................................*/
+.logo-slide img{
+    margin: 0 0px;
+}
+.buttonDownload{
+    font-size: 10px;
+    
+}
+.social-media-icons .fa-brands{
+    margin: 0 6px;
+   height: 25px;
+   width: 25px;
+   font-size: 15px;
+   line-height: 28px
+}
+.btn{
+    display: flex;
+}
+.btn button{
+    width: 120px;
+    height: 30px;
+}
+.btn button a{
+    font-size: 12px;
+    font-weight: 800;
+}
+.wrapper{
+  justify-content: center;
+}
+
+/*..........................................Back to top button.........................*/
+.bottom-top{
+    margin-left: 80px;
+}
+
+/*............................................Footer section.............................*/
+.copyright{
+    width: 100%;
+}
+.copyright p{
+    font-size: 15px;
+    margin: auto;
+}
+.copyright span{
+  display: none;
+}
+
+
+.skill-card {
+    background-color: #1f2235;
+    border-top: 1px solid #4f46e5;
+    border-bottom: 1px solid #4f46e5;
+    margin: 0 2px;
     border-radius: 10px;
-    transition: transform 0.5s;
-}
-.work:hover img{
-    opacity: .4;
-}
-
-    /*..........................................Skill section................................*/
-.small-title{
-    margin-top: 36px;
-    margin-left: 5%;
-    font-size: 28px;
-}
-
-    .skill-card {
-      margin: 0 2px;
-      border-radius: 10px;
-      padding: 5px;
-      text-align: center;
-      width: 90px;
-      height: 70px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .skill-card img {
-      width: 30px;
-      height: 30px;
-     margin: auto;
-    }
-    .skill-card p{
-        font-size: 14px;
-        text-align: center;
-    }
-    body.light-theme .skills-section p{
-        font-size: 18px;
-        color: rgb(16, 10, 36);
-    }
-    /*..........................................message section..........................................*/
-    .message-container{
-        padding: 10px;
-        margin: auto;
-        margin-top: 12px;
-    }
-    .message-container input{
-        width: 340px;
-        height: 40px;
-        border-radius: 8px;
-        margin-bottom: 16px;
-        padding: 10px 10px;
-    }
-    .message-container textarea{
-        width: 340px;
-        height: 100px;
-        color: black;
-        font-size: 16px;
-        border-radius: 5px;
-        padding: 10px 2px;
-    }
-    /*..........................................Footer section..........................................*/
-
-    .footer {
-        width: 100%;
-        text-align: center;
-        padding: 12px 0;
-      }
+    padding: 1rem;
+    text-align: center;
+    width: 80px;
+    height: 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
+  .skill-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+  }
+
