@@ -588,14 +588,20 @@ transform: translateX(-100%);
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: whitesmoke;
   }
   
   .skills-subtitle {
-    font-size: 16px;
-    color: #aaa;
+    font-size: 18px;
+    color: #e9e2e2;
     margin-bottom: 40px;
   }
-  
+  body.light-theme .skills-subtitle{
+    color: rgb(18, 15, 28);
+}
+body.dark-theme .skills-subtitle{
+    color: rgb(243, 243, 244);
+}
   .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -650,17 +656,16 @@ transform: translateX(-100%);
     overflow: hidden;
     width: 95%;
     margin: auto;
-    color: white;
     text-align: center;
     font-family: 'Arial', sans-serif;
   }
-  body.light-theme .skills-section p{
-    font-size: 18px;
-    color: rgb(16, 10, 36);
+  body.light-theme .skill-card p{
+    font-size: 15px;
+    color: rgb(222, 215, 243);
 }
-body.dark-theme .skills-section p{
-    font-size: 18px;
-    color: rgb(207, 205, 213);
+body.dark-theme .skill-card p{
+    font-size: 15px;
+    color: rgb(247, 246, 250);
 }
   .skills-title {
     font-size: 2rem;
@@ -703,7 +708,7 @@ body.dark-theme .skills-section p{
   
   .skill-card p {
     color: white;
-    font-size: 1rem;
+    font-size: 16px;
     margin: 0;
   }
   
@@ -1442,8 +1447,8 @@ nav ul {
         font-size: 14px;
         text-align: center;
     }
-    body.light-theme .skills-section p{
-        font-size: 18px;
+.skills-section p{
+        font-size: 14px;
         color: rgb(16, 10, 36);
     }
     /*..........................................message section..........................................*/
@@ -1472,7 +1477,7 @@ nav ul {
   .top-btn{
     position: fixed;
     bottom: 20px;
-    right: 50px;
+    right: 25px;
 
     width: 40px;
     height: 40px;
