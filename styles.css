@@ -1050,27 +1050,47 @@ body.light-theme .btn button.github-btn a{
   }
   
   /* ...............................Back to top button............................... */ 
-.top-bottom {
-    width: 40px;
-    height: 40px;
+  .top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    background: rgb(88, 10, 10);
+    color: white;
+    border: none;
     border-radius: 50%;
-    background-color: rgb(20, 20, 20);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    z-index: 1;
+    opacity: 1;
+    transition: 0.3s;
+
+  }
+.top-bottom {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(234, 5, 5);
     border: none;
     font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
-   border: 2px solid orangered;
+   border:none;
     opacity: 0.5;
     cursor: pointer;
     transition-duration: 0.3s;
     overflow: hidden;
     position: relative;
-    margin: 12px auto;
+    margin: auto;
   }
   
   .svgIcon {
-    width: 12px;
+    width: 16px;
     transition-duration: 0.3s;
   }
   
@@ -1079,17 +1099,15 @@ body.light-theme .btn button.github-btn a{
   }
   
   .top-bottom:hover {
-    width: 140px;
-    border-radius: 30px;
+    width: 120px;
+    border-radius: 20px;
     transition-duration: 0.3s;
    color: white;
     opacity: 1;
-    
     align-items: center;
   }
   
   .top-bottom:hover .svgIcon {
-    /* width: 20px; */
     transition-duration: 0.3s;
     transform: translateY(-200%);
   }
@@ -1099,7 +1117,8 @@ body.light-theme .btn button.github-btn a{
     bottom: -20px;
     content: "Back to Top";
     color: white;
-    /* transition-duration: .3s; */
+    text-align: center;
+  
     font-size: 0px;
   }
   
@@ -1108,7 +1127,6 @@ body.light-theme .btn button.github-btn a{
     opacity: 1;
     color: white;
     bottom: unset;
-    /* transform: translateY(-30px); */
     transition-duration: 0.3s;
   }
   
@@ -1449,6 +1467,25 @@ nav ul {
         border-radius: 5px;
         padding: 10px 2px;
     }
+      
+  /* ...............................Back to top button............................... */ 
+  .top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+
+    width: 40px;
+    height: 40px;
+
+
+  }
+.top-bottom {
+    width: 40px;
+    height: 40px;
+  
+   
+  }
+  
     /*..........................................Footer section..........................................*/
 
     .footer {
