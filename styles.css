@@ -301,6 +301,7 @@ body.light-theme .header-text .typing-effect{
 }
 .about-column-2{
     flex-basis: 60%;
+    margin-right: 15px;
 }
 .about-column-2 .sub-title{
     font-weight: 600;
