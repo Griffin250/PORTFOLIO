@@ -390,6 +390,8 @@ font-weight: 600;
   
   .certificate:hover {
     transform: scale(1);
+    background-color: #413737;
+    transition: .3s ease;
   }
   
   .badge {
@@ -1456,10 +1458,9 @@ nav ul {
     position: absolute;
     width: 50px;
     height: 5px;
-    background: #f13d3da1;
-    top: 50%; /* Center it vertically */
-    left: 2%; /* Position it immediately after the text */
-    transform: translateY(-50%); /* Adjust vertical alignment */
+    background: #f13d3da1;/* Center it vertically */
+    left: 2%; 
+    transform: translateY(-50%); 
   }
   .underline::after {
     content: "";
