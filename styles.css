@@ -2,8 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+body {
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .underline {
+    position: relative; /* Set the container to relative */
+    display: inline-block; /* Ensure it only takes the width of the text */
+  }
+  
+  .underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: #f13d3da1;
+    top: 50%; /* Center it vertically */
+    left: 32%; /* Position it immediately after the text */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+  }
+  
+
 #blogPosts{
     display: none;
 }
@@ -297,7 +320,7 @@ body.light-theme .header-text .typing-effect{
 .about-column-1 img{
     border-radius: 15px;
     width: 100%;
-    margin-top: -15%;
+    margin-top: 10%;
 }
 .about-column-2{
     flex-basis: 60%;
@@ -344,6 +367,59 @@ font-weight: 600;
     color: rgb(125, 33, 33);
     font-weight: bold;
 }
+/*..........................Certificates section..........................*/
+  .certificates {
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .certificates h1{
+    font-size: 40px;
+  }
+  .certificate {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(255, 211, 211, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .certificate:hover {
+    transform: scale(1);
+  }
+  
+  .badge {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  .details {
+    flex-grow: 1;
+    padding: 4px;
+    cursor: pointer;
+  }
+  .details a{
+    color: white;
+    text-decoration: none;
+  }
+  .details h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #d4d4d4;
+  }
+  
+  .details p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #a1a1a1;
+  }
+  
 /*..........................Service section..................................*/
 
 .service-container .sub-title{
@@ -1363,7 +1439,40 @@ nav ul {
     margin-right: 5px;
     margin-top: 15px;
 }
-
+.certificates {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .certificates h1{
+    font-size: 36px;
+    text-align: center;
+  }
+  .underline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #f13d3da1;
+    top: 50%; /* Center it vertically */
+    left: 2%; /* Position it immediately after the text */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+  }
+  .underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #f13d3da1;
+    top: 50%; /* Center it vertically */
+    left: 80%; /* Position it immediately after the text */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+  }
+  
 /*..........................................Service section..........................................*/
 .services{
     margin-bottom: 32px;

@@ -89,3 +89,15 @@ window.onload = function() {
   // Apply the saved theme
   document.body.classList.add(savedTheme + '-theme');
 };
+
+
+// Add hover animations or dynamic effects if needed
+document.querySelectorAll('.certificate').forEach(certificate => {
+  certificate.addEventListener('mouseenter', () => {
+    certificate.style.transform = 'scale(1.1)';
+  });
+
+  certificate.addEventListener('mouseleave', () => {
+    certificate.style.transform = 'scale(1)';
+  });
+});
