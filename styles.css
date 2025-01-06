@@ -9,22 +9,6 @@ body {
     margin: 0;
     padding: 0;
   }
-  .underline {
-    position: relative; /* Set the container to relative */
-    display: inline-block; /* Ensure it only takes the width of the text */
-  }
-  
-  .underline::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100px;
-    height: 5px;
-    background: #f13d3da1;
-    top: 50%; /* Center it vertically */
-    left: 32%; /* Position it immediately after the text */
-    transform: translateY(-50%); /* Adjust vertical alignment */
-  }
   
 
 #blogPosts{
@@ -330,6 +314,7 @@ body.light-theme .header-text .typing-effect{
     font-weight: 600;
     color: white;
     font-size: 44px;
+    margin-bottom: 25px;
 }
 body.light-theme .about-column-2 .sub-title{
     color: black;
@@ -377,6 +362,23 @@ font-weight: 600;
   }
   .certificates h1{
     font-size: 40px;
+  }
+  h1.underline {
+    position: relative; 
+    display: inline-block; 
+  }
+  
+  h1.underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #585757a1;
+    top: 50%; 
+    left: 32%; 
+    border-radius: 4px;
+    transform: translateY(-50%);
   }
   .certificate {
     display: flex;
@@ -452,6 +454,23 @@ body.light-theme .service-container .sub-title{
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
+.services h1.underline {
+    position: relative; 
+    display: inline-block; 
+  }
+  
+ .services h1.underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background: #585757a1;
+    top: 50%; 
+    left: 110%; 
+    border-radius: 4px;
+    transform: translateY(-50%);
+  }
 .service-list div i{
     font-size: 40px;
     margin-bottom: 10px;
@@ -503,10 +522,27 @@ transform: translateY(-10px);
     padding: 80px;
     margin-top: 50px;
 }
-.portfolio-container h1{
+
+.portfolio-container h1.underline {
+    position: relative; 
+    display: inline-block; 
     font-size: 45px;
     font-weight: 600;
-}
+  }
+  
+ .portfolio-container h1.underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background: #585757a1;
+    top: 50%; 
+    left: 110%; 
+    border-radius: 4px;
+    transform: translateY(-50%);
+  }
+
 .worklist{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -620,11 +656,31 @@ font-size: 12px;
     opacity: 1;
     transition: .3s;
 }
-/*.....................................................new section..........................*/
+/*.....................................................Tech stack section..........................*/
 .small-title{
     margin-left: 5%;
     font-size: 44px;
 }
+
+.tech-stack h1.underline {
+    position: relative; 
+    display: inline-block; 
+    font-size: 45px;
+    font-weight: 600;
+  }
+  
+ .tech-stack h1.underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background: #585757a1;
+    top: 50%; 
+    left: 110%; 
+    border-radius: 4px;
+    transform: translateY(-50%);
+  }
 
 
 /*.....................................my skills section ...................................*/
@@ -811,10 +867,28 @@ body.dark-theme .skill-card p{
 .contact-container{
     padding: 80px;
 }
-.contact-container h1{
+.contact-container h1.underline {
+    position: relative; 
+    display: inline-block; 
+    font-size: 45px;
+    font-weight: 600;
     margin-bottom: 10px;
-    font-size: 40px;
-}
+    font-size: 44px;
+  }
+  
+ .contact-container h1.underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background: #585757a1;
+    top: 50%; 
+    left: 110%; 
+    border-radius: 4px;
+    transform: translateY(-50%);
+  }
+
 .contact-container .p2{
     margin-bottom: 10px;
     margin-top: 10px;
@@ -1450,28 +1524,18 @@ nav ul {
   }
   .certificates h1{
     font-size: 36px;
-    text-align: center;
   }
-  .underline::before {
+
+  h1.underline::after {
     content: "";
     display: block;
     position: absolute;
-    width: 50px;
-    height: 5px;
-    background: #f13d3da1;/* Center it vertically */
-    left: 2%; 
+    width: 100px;
+    height: 2px;
+    background: #585757a1;
+    top: 50%; 
+    left: 60%;
     transform: translateY(-50%); 
-  }
-  .underline::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 5px;
-    background: #f13d3da1;
-    top: 50%; /* Center it vertically */
-    left: 80%; /* Position it immediately after the text */
-    transform: translateY(-50%); /* Adjust vertical alignment */
   }
   
 /*..........................................Service section..........................................*/
@@ -1486,11 +1550,22 @@ nav ul {
 }
 .service-container .sub-title{
     font-size: 32px;
-    border-top: 2px solid rgb(42, 38, 56);
     width: 90%;
     margin: 20px auto;
 }
-
+  
+ .services h1.underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: #585757a1;
+    top: 50%; 
+    left: 80%; 
+    border-radius: 4px;
+    transform: translateY(-50%);
+  }
 /*..........................................Portfolio section..........................................*/
 .portfolio-container{
     margin: auto;
@@ -1498,9 +1573,25 @@ nav ul {
 }
 .portfolio-container h1.sub-title{
     font-size: 32px;
-    border-top: 2px solid rgb(42, 38, 56);
     width: 90%;
 }
+.portfolio-container h1.underline {
+    position: relative; 
+    display: inline-block; 
+  }
+  
+ .portfolio-container h1.underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #585757a1;
+    top: 50%; 
+    left: 70%; 
+    border-radius: 4px;
+    transform: translateY(-50%);
+  }
 #portfolio{
     padding: 24px;
     margin-top: 0px;
@@ -1535,11 +1626,27 @@ nav ul {
 }
 
     /*..........................................Skill section................................*/
-.small-title{
-    margin-top: 36px;
-    margin-left: 5%;
-    font-size: 28px;
-}
+
+.tech-stack h1.underline {
+    position: relative; 
+    display: inline-block; 
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+ .tech-stack h1.underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #585757a1;
+    top: 50%; 
+    left: 110%; 
+    border-radius: 4px;
+    transform: translateY(-50%);
+  }
+
 
     .skill-card {
       margin: 0 2px;
@@ -1563,9 +1670,24 @@ nav ul {
         font-size: 14px;
         color: rgb(16, 10, 36);
     }
+
+    /*..........................................Contact section..........................................*/
+    .contact-container h1.underline::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 2px;
+        background: #585757a1;
+        top: 50%; 
+        left: 110%; 
+        border-radius: 4px;
+        transform: translateY(-50%);
+      }
+    
     /*..........................................message section..........................................*/
     .message-container{
-        padding: 10px;
+        padding: 10px 15px;
         margin: auto;
         margin-top: 12px;
     }
