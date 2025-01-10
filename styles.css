@@ -376,7 +376,7 @@ font-weight: 600;
     height: 2px;
     background: #585757a1;
     top: 50%; 
-    left: 32%; 
+    left: 78%; 
     border-radius: 4px;
     transform: translateY(-50%);
   }
@@ -1523,12 +1523,12 @@ nav ul {
     gap: 15px;
   }
   .certificates h1{
-    font-size: 36px;
+    font-size: 22px;
   }
 
   h1.underline::after {
     content: "";
-    display: block;
+    display: none;
     position: absolute;
     width: 100px;
     height: 2px;
