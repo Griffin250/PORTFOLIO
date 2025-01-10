@@ -1434,7 +1434,18 @@ body.dark-theme .message-container{
     margin: 10px 40px;
     float: right;
 }
+body.light-theme nav ul i.close-btn{
+  display: block;
+  color: orangered;
+  font-size: 40px;
+  font-weight: 800;
+  margin: 10px 40px;
+  float: right;
+}
 
+body.light-theme nav ul{
+  background: rgb(34, 36, 38);
+}
 
 nav ul {
     background: rgb(165, 42, 42);
@@ -1458,7 +1469,25 @@ nav ul {
       font-size: 16px;
       font-weight: 600;
     }
-   
+    body.light-theme nav ul button.contact-me-btn{
+      width: 100px;
+       height:28px;
+       background:orangered;
+       border-radius: 4px;
+       margin: 10px 30px;
+   }
+    nav ul button.contact-me-btn{
+    width: 100px;
+     height: 28px;
+     background: black;
+     border-radius: 4px;
+     margin: 10px 30px;
+ }
+ nav ul button.contact-me-btn a{
+     font-size: 12px;
+     text-align: center;
+     font-weight: 700;
+ }
   /* Theme switch adjustments */
   label.switch {
     position: absolute;
@@ -1486,13 +1515,6 @@ nav ul {
     .intro,
     .header-text {
       font-size: 20px;
-    }
-    .contact-me-btn {
-      width: 100px;
-      display: none;
-    }
-    .contact-me-btn a {
-      font-size: 12px;
     }
     .profile-image {
         width: 100%;
