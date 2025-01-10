@@ -20,10 +20,9 @@
             
             <li> <a href="#home"> <span>HOME</span></a> </li>
             <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">SERVICES</a></li>
             <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#blogPosts"> BLOG</a></li>
-            
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#projects"> PROJECTS</a></li>
             <button class="contact-me-btn"> <a href="#contact"> CONTACT ME</a></button>
           </ul>
          
@@ -79,7 +78,7 @@
               digital products.</p>
            
             <!----------------Tab-content in About me section---------------------------->
-            <div class="second-row">
+            <div class="second-row" id="portfolio">
               <div class="tab-column" data-aos="fade-up" data-aos-duration="2000">
                 <h2>Skills</h2>
                 <ul>
@@ -131,8 +130,8 @@
                   </li>
                 </ul>
               </div>
-             
             </div>
+            
             <div class="certificates" data-aos="fade-up" data-aos-duration="2000">
               <h1 data-aos="zoom-in" data-aos-duration="2000" class="underline">Certifications & Achievements</h1>
               <div class="certificate" data-aos="fade-up" data-aos-duration="1500">
@@ -238,9 +237,9 @@
         </div>
       </div>
     </div>
-    <!------------------------------Portfolio section----------------------->
-    <div id="portfolio">
-      <div class="portfolio-container">
+    <!------------------------------Projects section----------------------->
+    <div id="projects">
+      <div class="project-container">
         <h1 class="sub-title title underline" data-aos="fade-down" data-aos-duration="500"> Latest Projects</h1>
         <div class="worklist">
           <div class="work" data-aos="fade-down" data-aos-duration="2000">
@@ -544,7 +543,7 @@
 <!--------------------------blog Posts section--------------------->
 <section>
   <div id="blogPosts" class="blogPosts">
-    <div class="portfolio-container">
+    <div class="project-container">
       <h1 class="sub-title title"> My Blogs Posts</h1>
       <div class="worklist">
         <div class="work" data-aos="fade-down" data-aos-duration="2000">
@@ -644,85 +643,96 @@
     <!--------------------------Contact section--------------------->
  
     <form
-      class="contact-row" name="submit-to-google-sheet"
-      action="https://formsubmit.co/c45c2d65dc44859a3e1103c6235c0a10" method="POST" target="_self" >
-
-      <div id="contact" class="contact-column" data-aos="fade-up"
-      data-aos-duration="2000">
-        <div class="contact-container">
-          <h1 class="underline">Hire Me</h1>
-          <p class="p1">
-            "Let's collaborate on Web and App Development, <br />
-            Photography, or UI/UX Design."
-          </p>
-          <p class="p2">Contact me to bring your ideas to life!</p>
-          <a href="mailto:isiah.tuyisenge@outlook.com">
-            <i class="fa-solid fa-envelope"></i>
-            <span> contact@isiahgriffin.no</span></a>
-            <br /><br/>
-          <a href="tel:+47-4056-9093"><i class="fa-solid fa-phone-flip"></i><span> +47-40569093 </span></a>
-
-          <div class="social-media-icons">
-            <a href="https://www.instagram.com/_griffin_techs_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="javscript:void(0)"><i class="fa-brands fa-facebook"></i></a>
-            <a href="javscript:void(0)"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/isiah-tuyisenge/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Griffin250"> <i class="fa-brands fa-github"></i></a>
-          </div>
-
-      <div class="download-button">
-      <button class="buttonDownload"> <a href="images/Files/CV Available on Request.pdf" target="_blank">Download CV </a></button>
-    </div>
-
-        </div> </div>
-
-      <div class="contact-colum" data-aos="fade-down"
-      data-aos-duration="2000">
-        <div class="message-container">
-          <label for="name" class="name">
-            <input
-              type="name"
-              name="name"
-              id="name"
-              placeholder="Your Name"
-              required
-            />
-          </label>
-          <div class="message-area">
-            <label for="email">
-              <input
-                for="email"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your E-mail"
-                required
-              />
-            </label>
-          </div>
-          <textarea
-            class="message-box"
-            name="message"
-            id="message"
-            spellcheck="off"
-            required
-            placeholder="Your Message...">
-        </textarea><br/>
-     
-<button class="button" type="submit">
-  Submit
-  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-    <path
-      clip-rule="evenodd"
-      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-      fill-rule="evenodd"
-    ></path>
-  </svg>
-</button>
-
+    class="contact-row"
+    name="submit-to-google-sheet"
+    action="https://formsubmit.co/c45c2d65dc44859a3e1103c6235c0a10"
+    method="POST"
+    target="_self"
+  >
+    <div id="contact" class="contact-column" data-aos="fade-up" data-aos-duration="2000">
+      <div class="contact-container">
+        <h1 class="underline">Hire Me</h1>
+        <p class="p1">
+          "Let's collaborate on Web and App Development, <br />
+          Photography, or UI/UX Design."
+        </p>
+        <p class="p2">Contact me to bring your ideas to life!</p>
+        <a href="mailto:isiah.tuyisenge@outlook.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>contact@isiahgriffin.no</span>
+        </a>
+        <br /><br />
+        <a href="tel:+47-4056-9093">
+          <i class="fa-solid fa-phone-flip"></i>
+          <span>+47 40569093</span>
+        </a>
+        <div class="social-media-icons">
+          <a href="https://www.instagram.com/_griffin_techs_" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="javascript:void(0)">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="javascript:void(0)">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/isiah-tuyisenge/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Griffin250" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div class="download-button">
+          <button class="buttonDownload">
+            <a href="images/Files/CV Available on Request.pdf" target="_blank">Download CV</a>
+          </button>
         </div>
       </div>
-    </form>
+    </div>
+  
+    <div class="contact-column" data-aos="fade-down" data-aos-duration="2000">
+      <div class="message-container">
+        <label for="name" class="input-label">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </label>
+        <label for="email" class="input-label">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </label>
+        <textarea
+          class="message-box"
+          name="message"
+          id="message"
+          spellcheck="off"
+          required
+          placeholder="Write your message here... Please provide details so i can assist you better.!"
+        ></textarea>
+        <button class="button" type="submit">
+          Submit
+          <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+            <path
+              clip-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </form>
+  
     <!------------------------------------------Back to top button----------------------->
   <div class="top-btn" data-aos="fade-up"
   data-aos-duration="2000"> 

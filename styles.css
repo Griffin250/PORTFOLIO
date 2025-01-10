@@ -517,20 +517,20 @@ transition: 0.3s ease;
 transform: translateY(-10px);
 }
 
-/*....................................Portfolio section......................*/
-#portfolio{
+/*....................................Project section......................*/
+#projects{
     padding: 80px;
     margin-top: 50px;
 }
 
-.portfolio-container h1.underline {
+.project-container h1.underline {
     position: relative; 
     display: inline-block; 
     font-size: 45px;
     font-weight: 600;
   }
   
- .portfolio-container h1.underline::after {
+ .project-container h1.underline::after {
     content: "";
     display: block;
     position: absolute;
@@ -859,354 +859,343 @@ body.dark-theme .skill-card p{
   
 
 /*...............................Contact section.................................................*/
-.contact-row{
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
+form.contact-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 80px;
 }
-.contact-container{
-    padding: 80px;
+.contact-container {
+  padding: 20px;
+  margin: auto;
+  max-width: 600px;
+}
+.contact-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
 .contact-container h1.underline {
-    position: relative; 
-    display: inline-block; 
-    font-size: 45px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    font-size: 44px;
-  }
-  
- .contact-container h1.underline::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 150px;
-    height: 2px;
-    background: #585757a1;
-    top: 50%; 
-    left: 110%; 
-    border-radius: 4px;
-    transform: translateY(-50%);
-  }
+  position: relative;
+  display: inline-block;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 
-.contact-container .p2{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
+.contact-container h1.underline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background: #585757a1;
+  top: 50%;
+  left: 110%;
+  border-radius: 4px;
+  transform: translateY(-50%);
 }
-.contact-container a{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: white;
+
+.contact-container .p2 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
 }
-.contact-container .fa-solid{
-    color: brown;
-    font-size: 20px;
+
+.contact-container a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
 }
-.contact-container span{
-    margin-left: 10px;
-    color: brown;
+
+.contact-container .fa-solid {
+  color: brown;
+  font-size: 20px;
 }
-.contact-container span:hover{
+
+.contact-container span {
+  margin-left: 10px;
+  color: brown;
+}
+
+.contact-container span:hover {
   border-bottom: 2px solid white;
-    height: 15px;
+  height: 15px;
 }
 
 /*...............................................Social media icons...................................*/
 
- .social-media-icons .fa-brands{
-    width: 35px;
-    height: 35px;
-    margin-top: 20px;
-    font-size: 20px;
-    color: white;
-    line-height: 38px;
-    text-align: center;
-    background:brown;
-    border-radius: 50%;
-    cursor: pointer;
+.social-media-icons .fa-brands {
+  width: 35px;
+  height: 35px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  line-height: 38px;
+  text-align: center;
+  background: brown;
+  border-radius: 50%;
+  cursor: pointer;
 }
-.icons .fa-brands{
-    margin: 0 12px;
-}
- .social-media-icons .fa-brands:hover{
-    background: white;
-    color: brown;
-    opacity: 0.4;
-    transition: 0.3s;
-}
-.btn{
-    margin: 25px -30px;
-    width: auto;
-    justify-content: space-between;
-}
-.btn button{
-    width: 140px;
-    height: 40px;
-    background: none;
-    border: none;
-    border-radius: 8px;
-    margin: 0 30px;
-    cursor: pointer;
-}
-.btn button.linkedin-btn{
-    background: orangered;
-    opacity: .7;
-}
-.btn button.linkedin-btn:hover{
-    opacity: 1;
-}
-body.light-theme .btn button.github-btn{
-   border: 1px solid black;
-}
-body.dark-theme .btn button.github-btn{
-    border: 1px solid brown;
-}
-body.light-theme .btn button.github-btn a{
-    color: black;
-    font-weight: 700;
-}
-.btn .get-resume-btn{
-    background: orangered;
-    opacity: .7;
-}
-.btn .get-resume-btn:hover{
-    opacity: 1;
-}
-.btn button a{
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    text-align: center;
-    font-weight: 700;
 
+.social-media-icons .fa-brands:hover {
+  background: white;
+  color: brown;
+  opacity: 0.4;
+  transition: 0.3s;
 }
-/*............................................................. Download button.................................................. */ 
+
+/*............................................................. Download button.................................................. */
 .buttonDownload {
-    width:500px;
-    display: inline-block;
-    position: relative;
-    padding: 10px 12px;
-    background-color:orangered;
-    color: white;
-    font-family: sans-serif;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 800;
-    text-align: center;
-    text-indent: 15px;
-    border: none;
-    opacity: 1;
-   }
-   
-   .buttonDownload:hover {
-   opacity: 1;
-   transition: 0.3s;
-    color: white;
-   }
-   
-   .buttonDownload:before, .buttonDownload:after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 8px;
-    top: 52%;
-   }
-   
-   .buttonDownload:before {
-    width: 10px;
-    height: 2px;
-    border-style: solid;
-    border-width: 0 2px 2px;
-    
-   }
-   
-   .buttonDownload:after {
-    width: 0;
-    height: 0;
-    margin-left: 3px;
+  width: 500px;
+  display: inline-block;
+  position: relative;
+  padding: 10px 12px;
+  background-color: orangered;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+  text-indent: 15px;
+  border: none;
+  opacity: 1;
+}
+
+.buttonDownload:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.buttonDownload:before,
+.buttonDownload:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 8px;
+  top: 52%;
+}
+
+.buttonDownload:before {
+  width: 10px;
+  height: 2px;
+  border-style: solid;
+  border-width: 0 2px 2px;
+}
+
+.buttonDownload:after {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  margin-top: -7px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+  animation: downloadArrow 0.5s linear infinite;
+  animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+  border-color: white;
+}
+
+.buttonDownload:hover:after {
+  border-top-color: white;
+  animation-play-state: running;
+}
+
+@keyframes downloadArrow {
+  0% {
     margin-top: -7px;
-    border-style: solid;
-    border-width: 4px 4px 0 4px;
-    border-color: transparent;
-    border-top-color: inherit;
-    animation: downloadArrow 0.5s linear infinite;
-    animation-play-state: paused;
-   }
-   
-   .buttonDownload:hover:before {
-    border-color: white;
-   }
-   
-   .buttonDownload:hover:after {
-    border-top-color: white;
-    animation-play-state: running;
-   }
-   
-   @keyframes downloadArrow {
-    0% {
-     margin-top: -7px;
-     opacity: 1;
-    }
-   
-    0.001% {
-     margin-top: -15px;
-     opacity: 0.8;
-    }
-   
-    50% {
-     opacity: 1;
-    }
-   
-    100% {
-     margin-top: 0;
-     opacity: 0.8;
-    }
-   }
+    opacity: 1;
+  }
+
+  0.001% {
+    margin-top: -15px;
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 0.8;
+  }
+}
+
 /*.................................Message-section.....................*/
-.contact-container button{
-    margin-top: 20px;
-    width: auto;
-    height: 40px;
-    border-radius: 8px;
-    background:orangered;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-.contact-container button a{
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-}
-.contact-container button:hover{
-    opacity: 0.5;
+.contact-container button {
+  margin-top: 20px;
+  width: auto;
+  height: 40px;
+  border-radius: 8px;
+  background: orangered;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
-.message-container{
-    padding: 10px;
-    margin: auto;
-    margin-top: 120px;
-    margin-left: -25%;
+.contact-container button a {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
 }
 
-.message-container input{
-    width: 500px;
-    height: 40px;
-    border-radius: 8px;
-    margin-bottom: 16px;
-    padding: 10px 10px;
-    border:none;
-    outline: none;
+.contact-container button:hover {
+  opacity: 0.5;
 }
-.message-container textarea{
-    width: 500px;
-    height: 100px;
-    color: black;
-    font-size: 16px;
-    border-radius: 5px;
-    padding: 10px 2px;
-    border:none;
-    outline: none;
-    resize: none;
+
+
+
+.message-container {
+  padding: 20px;
+  margin: auto;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-container input,
+.message-container textarea {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.message-container input:focus,
+.message-container textarea:focus {
+  border-color: #bc531a;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(188, 31, 26, 0.3);
+}
+
+.message-container textarea {
+  resize: none;
+  height: 150px;
+  line-height: 1.5;
+}
+
+.message-box::placeholder {
+  color: #888;
+  font-size: 14px;
+  font-style: italic;
 }
 
 .message-container button {
-    height: 40px;
-    width: auto;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    margin:auto;
-    margin-top: 5px;
-    background: orangered;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ff7f50, #ff4500);
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
-.message-box::placeholder{
-    color: black;
+
+.message-container button:hover {
+  opacity: 0.8;
 }
-.message-container button:hover{
-    opacity: 0.5;
-  
+
+.message-container .icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
 }
 
 /* ..........Submit button -...................*/ 
 .button {
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    padding-block: 0.5rem;
-    padding-inline: 1.25rem;
-    background-color: rgb(0 107 179);
-    border-radius: 9999px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: #ffff;
-    gap: 10px;
-    font-weight: bold;
-    border: 3px solid #ffffff4d;
-    outline: none;
-    overflow: hidden;
-    font-size: 15px;
-  }
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .button:hover {
-    transform: scale(1.05);
-    border-color: #fff9;
-  }
-  
-  .button:hover .icon {
-    transform: translate(4px);
-  }
-  
-  .button:hover::before {
-    animation: shine 1.5s ease-out infinite;
-  }
-  
-  .button::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100%;
-    background-image: linear-gradient(
-      120deg,
-      rgba(255, 255, 255, 0) 30%,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0) 70%
-    );
-    top: 0;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0 107 179);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
     left: -100px;
-    opacity: 0.6;
   }
-  
-  @keyframes shine {
-    0% {
-      left: -100px;
-    }
-  
-    60% {
-      left: 100%;
-    }
-  
-    to {
-      left: 100%;
-    }
+
+  60% {
+    left: 100%;
   }
+
+  to {
+    left: 100%;
+  }
+}
+
   
   /* ...............................Back to top button............................... */ 
   .top-btn{
@@ -1567,20 +1556,24 @@ nav ul {
     transform: translateY(-50%);
   }
 /*..........................................Portfolio section..........................................*/
-.portfolio-container{
+#projects{
+  padding: 28px;
+  margin-top: 30px;
+}
+.project-container{
     margin: auto;
     width: auto;
 }
-.portfolio-container h1.sub-title{
+.project-container h1.sub-title{
     font-size: 32px;
-    width: 90%;
+    width: 100%;
 }
-.portfolio-container h1.underline {
+.project-container h1.underline {
     position: relative; 
     display: inline-block; 
   }
   
- .portfolio-container h1.underline::after {
+ .project-container h1.underline::after {
     content: "";
     display: block;
     position: absolute;
@@ -1596,7 +1589,7 @@ nav ul {
     padding: 24px;
     margin-top: 0px;
 }
-.portfolio-container h1{
+.project-container h1{
     font-size: 40px;
     font-weight: 600;
 }
@@ -1672,6 +1665,12 @@ nav ul {
     }
 
     /*..........................................Contact section..........................................*/
+    form.contact-row{
+      margin: 20px;
+    }
+    .contact-column {
+      margin-top: 25px;
+    }
     .contact-container h1.underline::after {
         content: "";
         display: block;
@@ -1684,29 +1683,36 @@ nav ul {
         border-radius: 4px;
         transform: translateY(-50%);
       }
+    .contact-container{
+      width: 100%;
+      padding: 5px;
+      margin: auto;
+      
+    }
+    /*.......................message section........................*/
+    .message-container {
+      padding: 20px;
+      margin: auto;
+      max-width: 600px;
+     
+    }
     
-    /*..........................................message section..........................................*/
-    .message-container{
-        padding: 10px 15px;
-        margin: auto;
-        margin-top: 12px;
-    }
-    .message-container input{
-        width: 340px;
-        height: 40px;
-        border-radius: 8px;
-        margin-bottom: 16px;
-        padding: 10px 10px;
-    }
-    .message-container textarea{
-        width: 340px;
-        height: 100px;
-        color: black;
-        font-size: 16px;
-        border-radius: 5px;
-        padding: 10px 2px;
+    .message-container input,
+    .message-container textarea {
+      width: 100%;
+      height: auto;
+      margin-bottom: 16px;
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      
     }
       
+.message-container textarea {
+  resize: none;
+  height: 160px;
+  line-height: 1.5;
+}
   /* ...............................Back to top button............................... */ 
   .top-btn{
     position: fixed;
