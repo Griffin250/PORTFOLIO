@@ -279,8 +279,48 @@ font-weight: 800;
     0%, 100% {border-color: transparent;}
     50%{border-color: orangered;}
 }
-
-
+.github, .linkedin{
+  margin: 10px auto;
+}
+.linkedin-btn{
+  width: 150px;
+ height: 38px;
+ background: orangered;
+ border: none;
+ border-radius: 8px;
+ cursor: pointer;
+ opacity: .8;
+}
+.linkedin-btn a{
+ color: white;
+ text-decoration: none;
+ font-size: 18px;
+ text-align: center;
+ font-weight: 700;
+}
+.linkedin-btn:hover{
+ opacity: 1;
+}
+.github-btn{
+  width: 140px;
+ height: 38px;
+ background: orangered;
+ border: none;
+ border-radius: 8px;
+ margin-right: 20px;
+ cursor: pointer;
+ opacity: .8;
+}
+.github-btn a{
+ color: white;
+ text-decoration: none;
+ font-size: 18px;
+ text-align: center;
+ font-weight: 700;
+}
+.github-btn:hover{
+ opacity: 1;
+}
 
 .header-text h1 span{
     color: brown;
@@ -291,6 +331,8 @@ body.light-theme .header-text h1 span{
 body.light-theme .header-text .typing-effect{
     color: rgb(247, 2, 2);
 }
+
+
 /*.....................About me section...............*/
 
 .first-row{
@@ -1062,7 +1104,9 @@ form.contact-row {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
+body.dark-theme .message-container{
+    background: rgb(214, 217, 219);
+}
 .message-container input,
 .message-container textarea {
   width: 100%;
@@ -1533,7 +1577,7 @@ nav ul {
 }
 .service-list .wrapper{
     background: rgb(41, 41, 41);
-    padding: 40px;
+    padding: 32px;
     width: 85%;
     margin: auto;
 }
@@ -1557,7 +1601,7 @@ nav ul {
   }
 /*..........................................Portfolio section..........................................*/
 #projects{
-  padding: 28px;
+  padding: 32px;
   margin-top: 30px;
 }
 .project-container{
@@ -1689,6 +1733,21 @@ nav ul {
       margin: auto;
       
     }
+    .social-media-icons{
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+    }
+    
+.social-media-icons .fa-brands {
+margin: 5px;
+}
+.download-button{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+ 
+}
     /*.......................message section........................*/
     .message-container {
       padding: 20px;
@@ -1704,7 +1763,7 @@ nav ul {
       margin-bottom: 16px;
       padding: 10px 15px;
       border: 1px solid #ccc;
-      border-radius: 8px;
+      border-radius: 5px;
       
     }
       
@@ -1712,6 +1771,11 @@ nav ul {
   resize: none;
   height: 160px;
   line-height: 1.5;
+}
+.message-box::placeholder {
+  color: #888;
+  font-size: 14px;
+  font-style: italic;
 }
   /* ...............................Back to top button............................... */ 
   .top-btn{
