@@ -974,6 +974,7 @@ form.contact-row {
   width: 35px;
   height: 35px;
   margin-top: 20px;
+  margin-right: 50px;
   font-size: 20px;
   color: white;
   line-height: 38px;
@@ -1514,7 +1515,7 @@ nav ul {
     }
     .intro,
     .header-text {
-      font-size: 20px;
+      font-size: 22px;
     }
     .profile-image {
         width: 100%;
@@ -1530,7 +1531,7 @@ nav ul {
       font-size: 16px;
     }
     .header-text h1 {
-      font-size: 20px;
+      font-size: 28px;
       margin: 12px 0;
     }
 
