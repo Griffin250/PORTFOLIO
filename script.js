@@ -17,7 +17,7 @@ function closemenu() {
 
 }
 
-const words = ["Web Designer","UI/UX Designer", "FrontEnd Developer","BackEnd Developer","Content Creator", "Freelancer"];
+const words = ["FrontEnd Developer","BackEnd Developer", "UI/UX Designer", "Content Creator"];
 let wordIndex = 0;
 let charIndex = 0;
 let currentWord = '';

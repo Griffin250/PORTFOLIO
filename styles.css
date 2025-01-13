@@ -251,19 +251,25 @@ nav ul li a:hover{
 }
 .header-text p{
     font-weight: bold;
+    font-weight: 700;
+    font-family: roboto, Cambria;
 }
 .header-text h1{
     margin-top: 20px;
     font-size: 60px;
+    font-family: roboto, Cambria;
 }
 .intro{
 font-size: 40px;
 font-weight: 800;
+font-weight: 700;
+font-family: roboto, Cambria;
 }
 /*............................typing-effect..................*/
 
 .typing-effect{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 700;
+  font-family: roboto, Cambria;
     overflow: hidden;
     color: #ff004f;
     font-weight: 800;
@@ -363,16 +369,26 @@ body.light-theme .about-column-2 .sub-title{
 }
 h4.about-me-text{
     color: whitesmoke;
-    font-weight:500;
+    font-weight:700;
     font-size: 18px;
+    font-family: roboto, Cambria;
 }
 .about-me{
-    color: rgba(168, 156, 150, 0.814);
+    color: rgba(158, 150, 168, 0.814);
 }
 body.light-theme .aboutme h4.about-me-text{
 color: black;
-font-weight: 600;
+font-weight: 700;
 }
+body.light-theme .aboutme p{
+  color: black;
+  font-weight: 500;
+  font-family: roboto, Cambria;
+  }
+.aboutme p{
+  font-family: roboto, Cambria;
+  font-weight: 500;
+  }
 /*...........................Tab-content in About me section.......................*/
 
 .second-row{
@@ -391,8 +407,9 @@ font-weight: 600;
     margin-top: 15px;
 }
 .tab-column ul li span{
-    color: rgb(125, 33, 33);
+    color: rgb(221, 20, 20);
     font-weight: bold;
+    font-family: roboto, Cambria;
 }
 /*..........................Certificates section..........................*/
   .certificates {
@@ -504,18 +521,18 @@ font-weight: 600;
   }
 
   .social-card {
-    background: white;
-    box-shadow: 2px 2px 4px red;
+    background: whitesmoke;
     border-radius: 10px;
     width: 280px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(252, 215, 215, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .social-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(156, 139, 139, 0.2);
   }
 
   .social-card img {
@@ -533,13 +550,19 @@ font-weight: 600;
     font-size: 20px;
     margin: 0 0 10px;
     color: #333;
+    text-align: center;
   }
 
   .social-card p {
     font-size: 14px;
-    color: #666;
+    color: #2e2c2c;
     margin: 0 0 15px;
   }
+  .social-card .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
 
   .social-card a {
     display:inline-block;
@@ -547,7 +570,6 @@ font-weight: 600;
     background: #ff7f50;
     color: white;
     text-align: center;
-    margin: auto;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
