@@ -1065,7 +1065,9 @@ form.contact-row {
   border-radius: 4px;
   transform: translateY(-50%);
 }
-
+body.light-theme .contact-container p{
+  color: black;
+}
 .contact-container .p2 {
   margin: 10px 0;
   font-size: 18px;
