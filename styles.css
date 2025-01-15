@@ -10,7 +10,9 @@ body {
     padding: 0;
   }
   
-
+body p{
+  font-family: Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 #blogPosts{
     display: none;
 }
@@ -1098,7 +1100,9 @@ body.light-theme .contact-container p{
 }
 
 /*...............................................Social media icons...................................*/
-
+.social-media-icons{
+  margin: auto;
+}
 .social-media-icons .fa-brands {
   width: 35px;
   height: 35px;
@@ -1121,11 +1125,15 @@ body.light-theme .contact-container p{
 }
 
 /*............................................................. Download button.................................................. */
+.download-button{
+  margin-left: 1%;
+  padding: 0 40px;
+}
 .buttonDownload {
   width: 500px;
   display: inline-block;
   position: relative;
-  padding: 10px 12px;
+  padding: 10px 30px;
   background-color: orangered;
   color: white;
   font-family: sans-serif;
@@ -1136,6 +1144,7 @@ body.light-theme .contact-container p{
   text-indent: 15px;
   border: none;
   opacity: 1;
+ 
 }
 
 .buttonDownload:hover {
@@ -1888,11 +1897,11 @@ nav ul {
     .social-media-icons{
       display: flex;
       justify-content: center;
-      margin: 10px;
+      margin: 10px auto;
     }
     
 .social-media-icons .fa-brands {
-margin: 5px;
+margin: 5px 10px;
 }
 .download-button{
   display: flex;
