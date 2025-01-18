@@ -759,9 +759,12 @@ transform: translateY(-10px);
 
 .layer h2{
     font-weight:bold;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 22px;
     color: whitesmoke;
+}
+.layer p{
+  font-size: 14px;
 }
 .layer h3{
     margin-bottom: 8px;
